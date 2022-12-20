@@ -5,10 +5,6 @@ This repository is a design document proposal for the open source game Pioneer S
 
 ### About Pioneer
 
-```
-This is a description of the game as it works currently. Could be updated with each release to properly describe current state.
-```
-
 [Pioneer Space Simulator](https://pioneerspacesim.net) is a open source space adventure game set in the Milkyway galaxy at the turn of the 33rd century. Originally Pioneer started out as an open source remake of Frontier: Elite II, initiated by Tom Morton sometime around 2010. Since then the team strives to widen the scope and are slowly maturing the game past its craddle, while honoring these initial traditions. 
 
 Some things that inspire Pioneer:

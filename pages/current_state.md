@@ -1,5 +1,8 @@
 #### Where we are at now?
 
+| This is a brief description of the game as it is currently. Could be updated with each release to properly describe current state. |
+| ------------------------------------------------------------ |
+
 The game is open-ended, and you are free to explore the millions of star systems in the game. You can land on planets, slingshot past gas giants, do a flip and burn maneuver while going for a nice trade opportunity or when you are trying to help out a drifting ship in distress. 
 
 The flight model is fully Newtonian in a two-body problem manner. The player can experience how spaceflight would actually work if one would be sitting in a spacecraft of [torchship](http://projectrho.com/public_html/rocket/torchships.php) levels of power and efficiency of several thousand km/s deltaVs and multi-g accelerations. Ships have visible maneuvering thrusters, although their effects are not directly simulated. 
@@ -18,3 +21,5 @@ The player can buy new ships, but only can have one at a time. Essentially the p
 The player starts with a small ship and some equipment and is free to roam. There are several types of missions to earn money doing, ranging from simple deliveries to planetary data gathering, Search & Rescue operations or assassinations. These missions are facilitated through a BBS system which can be found on spaceports. Spaceports also provide maintenance service, a place to contact police to pay fines, and to refuel.
 
 The game is extensible with mods which can replace or add functionality or assets like ships, stations and such. Scripting and UI definition are done with the [lua scripting language](https://www.lua.org/) and data for spaceships, systems and such are stored in [json files](https://www.json.org/json-en.html).
+
+For more in-depth information, please refer to the [player wiki]() (wherever it may be in the end)
