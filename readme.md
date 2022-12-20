@@ -140,6 +140,7 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
   - SAR missions are great. External docking would add quite a lot to them, especially if the target is rotating due to RCS failure. Spontaneous distress calls would also be nice, either with payment or just reputation increase. Some places could even make responding to them mandatory (which could affect nearby NPC ships too). These could also be traps. 
     There cold also be SAR missions in difficult terrain (asteroid belts, complex structures, etc)
   - Expeditions to unexplored systems - larger multi-leg missions with several types of sub-tasks, like surveys, resupply, couriering and such. Large player ship with subcrafts and management/overview interface could be interesting for this. 
+  - Not sure how we could do exploration for it to be interesting and rewarding. Tacking on a minigame E:D style does not seem to be a good direction.
   - Multi-leg inspection missions at places with difficult terrain (asteroid belts, complex superstructures, mountainous places etc)
   - Smuggle deliveries (with more possibility of violence, and opportunity for sneaking and evasion)
   - Resupply missions (deliveries to uninhabited places with limited opportunities to refuel)
