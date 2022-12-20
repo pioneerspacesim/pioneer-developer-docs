@@ -177,7 +177,7 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
     - Alternatively we could postulate that the atmo shields alleviate most of the drag problem, so there's less of a distinction. Depends on, how much space opera we want.
   - The ship market and maintenance facilities could be separated from the spaceports to an extent. The ports would have a limited level of maintenance service, and a bunch of adverts to repair and ship market facilities where one would need to fly to use those services. 
   - There could even be distinct passenger ports inside cities with very little amenities, and larger logistic centers at the edge of the city, where the trading and such happens. 
-    - **Heh, the BBS could even be planet-level, and maybe even accessible via comms.** You'd speak to the person, who would then designate which port you'd need to do the pickup, or where to go to buy that ship you choose. **So players would need to navigate to places, **which would lessen the menu based gameplay a bit.
+    - **Heh, the BBS could even be planet-level, and maybe even accessible via comms.** You'd speak to the person, who would then designate which port you'd need to do the pickup, or where to go to buy that ship you choose. **So players would need to navigate to places,** which would lessen the menu based gameplay a bit.
   - **External docking**! (sorry, I would really like to have this :) )
   - **The ability to own multiple ships - separate player from ship**
 - **Ship design and visual language**
