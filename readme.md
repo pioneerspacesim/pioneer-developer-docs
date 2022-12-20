@@ -83,14 +83,14 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
 
 ### Important aspects:
 
-- **Emergent gameplay coming from the game systems working together** to provide unscripted and unique events. For example an ill-maintained engine forces the player to do orbital maneuvers to get to their destination, but then they have to decide wether to kill of livestock cargo to conserve resources, or attempt to keep them alive, and risk not making it to port. 
+- **Emergent gameplay coming from the game systems working together** to provide unscripted and unique events. For example an ill-maintained engine forces the player to do orbital maneuvers to get to their destination, but then they have to decide whether to kill of livestock cargo to conserve resources, or attempt to keep them alive, and risk not making it to port. 
   - Scripted missions and stories standing on this systemic and emergent base. 
     - A satisfied mission giver could later follow up with other missions and initiate a chain of other missions
     - A dissatisfied mission giver could send assassins after the player
       - More elaborate stories could be started from certain missions or other in-game events, like a distress call for example turning into a combat chase, then some detective work, then an assault on a pirate outpost.
     - One game start could work as a chain of missions acting as a tutorial. 
   - *I suspect properly implementing this needs a lot of groundwork, but I think this would be a nice thing to aim for.*
-- **Full scale solar systems and the realistic brachistocronne travel** in them is one of the unique and interesting points of the game. It would benefit from UI-UX improvements, like a proper travel planning interface and some more visual feedback in the flight UI, like showing the orbits of bodies. *This could be a project on its own.*
+- **Full scale solar systems and the realistic direct transfer travel** in them is one of the unique and interesting points of the game. It would benefit from UI-UX improvements, like a proper travel planning interface and some more visual feedback in the flight UI, like showing the orbits of bodies. *This could be a project on its own.*
 - **Orbital maneuvering gameplay** while mostly happens as a last resort or in corner cases, I think is still an important aspect of the game. It would benefit from some UI and UX improvements, like worldview orbit display when in orbit.
 - **Autopilot needs a bit of rethinking** in my opinion: Right now it is just a way to not actually fly, which defeats the purpose of a space game even if one only wants to trade. I propose that the player facing autopilot should be relegated to executing flight plans made in the orbital map. *This could be a project on its own, or combined with the above UI/UX projects*
   - The player arrives in a system, and plans their flight to their destinations via the orbital map. Then the autopilot executes the planned trip. The efficiency and speed of the route would be decided by the player and their skill in planning. 
