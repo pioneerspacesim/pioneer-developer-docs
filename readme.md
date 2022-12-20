@@ -59,7 +59,7 @@ Since we are at the verge of an infrastructure change, we might as well think th
 - Github for actual development work
   - This design document properly writen and elaborated, hosted on github (could be part of the dev wiki)
   - Github Projects for project boards based on this design document
-  - Github Discussion to replace the dev forum as a notebook and async place for discussion. This could be the place for feature requests from users as well. Discussion threads can be referenced in the Project boards, even turned into tasks and such.
+  - Github Discussion or some other forum engine to replace the dev forum as a notebook and async place for discussion. This could be the place for feature requests from users as well. GH Discussion threads can be referenced in the Project boards, even turned into tasks and such.
   - Dev Wiki - hosted on github wiki? Not sure it it has all the things we need. 
     - Possibly there could be a separate coding and asset creation wiki, if you think there's benefit in separating them.
 - IRC for chat, as before. (And matrix connection is also possible, which is nice)
@@ -179,6 +179,7 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
   - There could even be distinct passenger ports inside cities with very little amenities, and larger logistic centers at the edge of the city, where the trading and such happens. 
     - **Heh, the BBS could even be planet-level, and maybe even accessible via comms.** You'd speak to the person, who would then designate which port you'd need to do the pickup, or where to go to buy that ship you choose. **So players would need to navigate to places, **which would lessen the menu based gameplay a bit.
   - **External docking**! (sorry, I would really like to have this :) )
+  - **The ability to own multiple ships - separate player from ship**
 - **Ship design and visual language**
   - Ships should have a somewhat believable structure and looks, but not aiming for 100% realism. RCS thrusters, appropriately sized main thrusters, visible sensor and similar equipment and such. 
   - I am aiming for a bit more subtle, but unique visuals. See the reworked OPLI ships. The aim is to have distinct visuals, with not too much over-the-topness.
