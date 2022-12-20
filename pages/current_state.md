@@ -1,4 +1,4 @@
-#### Where we are at now?
+# Where we are at now?
 
 | This is a brief description of the game as it is currently. Could be updated with each release to properly describe current state. |
 | ------------------------------------------------------------ |
