@@ -13,7 +13,7 @@ Some things that inspire Pioneer:
 - [Atomic Rockets](http://projectrho.com/public_html/rocket/) by Winchell Chung
 - Elite: Dangerous
 - Star Citizen
-- Nebulous Space Combat
+- Nebulous: Space Combat
 - Dwarf Fortress :P
 - List to be expanded, especially with non-spacesim games for the other parts
 
