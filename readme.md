@@ -168,6 +168,7 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
   - Flight UX is quite nice with the new flight computer. There's room for a bit of polish, but it's really nice overall.
   - Station screens could benefit from some facelift and UX improvement
   - Maps even more so (see also flight planning points)
+  - Interactive cockpits for more immersive gameplay. But optional, one should be able to play the game with only a HUD as well.
 - **Ships**
   - Our ships are quite over the place in terms of size and capabilities. **It could be beneficial to figure and very roughly block out a balanced set of ships either by resizing and restating current ones or using very rough and simple blockouts.** 
     - I think the overhauled OPLI ships are a nice place to start from.
