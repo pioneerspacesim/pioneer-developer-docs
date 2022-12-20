@@ -23,7 +23,7 @@ Some things that inspire Pioneer:
 
 Pioneer is a volunteer effort, chugging along for 12 years now. Current active(ish) team members are:
 
-- [Sturnclaw](https://github.com/Web-eWorks) 
+- [Sturnclaw](https://github.com/Web-eWorks)  - [list of ideas and plans](https://pioneerwiki.com/wiki/User:Sturnclaw)
 - [Impaktor](https://github.com/impaktor)
 - [Gliese852](https://github.com/Gliese852)
 - [WKFO](https://github.com/WKFO)
@@ -90,8 +90,11 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
       - More elaborate stories could be started from certain missions or other in-game events, like a distress call for example turning into a combat chase, then some detective work, then an assault on a pirate outpost.
     - One game start could work as a chain of missions acting as a tutorial. 
   - *I suspect properly implementing this needs a lot of groundwork, but I think this would be a nice thing to aim for.*
+
 - **Full scale solar systems and the realistic direct transfer travel** in them is one of the unique and interesting points of the game. It would benefit from UI-UX improvements, like a proper travel planning interface and some more visual feedback in the flight UI, like showing the orbits of bodies. *This could be a project on its own.*
+
 - **Orbital maneuvering gameplay** while mostly happens as a last resort or in corner cases, I think is still an important aspect of the game. It would benefit from some UI and UX improvements, like worldview orbit display when in orbit.
+
 - **Autopilot needs a bit of rethinking** in my opinion: Right now it is just a way to not actually fly, which defeats the purpose of a space game even if one only wants to trade. I propose that the player facing autopilot should be relegated to executing flight plans made in the orbital map. *This could be a project on its own, or combined with the above UI/UX projects*
   - The player arrives in a system, and plans their flight to their destinations via the orbital map. Then the autopilot executes the planned trip. The efficiency and speed of the route would be decided by the player and their skill in planning. 
   - Planning tools could include:
@@ -101,6 +104,7 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
     - Manual transfer planner - with acceleration, coasting and deceleration phase, and ability to fine-tune acceleration and the final speed (and thus orbit). Would need integration functionality, so it actually goes through the whole flight and shows the actual curved path the ship would take influenced by gravity. This could also support more precise planning than the approach command, since one could fine-tune the trip to arrive when the port or station is at the right position and almost directly approach it.
     - Orbital maneuvers - these could be chained together even with other commands for a more complex flight.
   - CoaDE has some nice tools for it, a possible inspiration. And it does integrate maneuvers, and does not treat them as instantaneous change of velocity. For transfer planning this would be quite important. It also has a nice semi-turn based approach for orbital flight: the player sets the time step, and the orbits show these time-steps. And one can advance time by these steps. Such a system, or the ability to put time accel off alarms onto the flight plan would be quite handy in my opinion. 
+
 - **Interstellar and interplanetary travel** - might need some thinking - sometimes I find the multi-ton fuel requirement a bit odd and limiting. Note sure about it though, but it would benefit from some discussion I think.
   - There cold be jump pellets or something for a certain number of jumps. These could be slowly manufactured from hydrogen  (or water) if needed, even by the drive or reactor. These pellets would mass less than a ton. (say 0.1t)
   - There could also be reactor fuel consumed at a certain slow rate depending on power draw. (H2, Deuterium - wonder how much is really needed). H2 and even deuterium could be found in the field for refueling. 
@@ -108,6 +112,7 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
   - We could switch propellant back to water, because it is more dense. Player could refuel on planets that have water or ice, or could use other propellants found elsewhere either planet-side or from gas giant scooping. (Performance then would be dictated by density of those.)
   - Or we can still postulate some super-dense H2 storage system and keep it as is and not overcomplicate things. 
     - Either way, pumping down fuel could benefit from some complexity: you could only pump down as much as you have empty H2 containers either bought or depleted by jump. Those containers would weigh very little, and could be traded in/refilled while refueling (automatically mostly, but could be done by hand too).  But I might overcomplicate things again. Anyhow it feels weird that we can just pump down H2 form the tanks, especially if we consider the 1m3 = 1t assumption we have right now. That stuff won't stay in a bladder nicely, and needs supercooling. 
+
 - **Ship systems** - an important part of emergent gameplay is a granular enough ship systems simulation. This could include equipment damage, wear and tear, quality, efficiency, heat and energy management. A lot of people enjoy this operational aspect of a space game, and we could lean into it with equipments generated RPG style from a pool of points, possibly even procedurally. Another important aspect is ship differentiation by roles and intentions (and the possible misuse of ships due to what's being available) *Certainly a large project with tentacles in about every aspect and other porject*
   - I think the current "internal volume = equipment volume free for all" approach makes ships less differentiated. Which boils down ship choice mostly to deltaV and capacity. 
   - A more elaborate hardpoint system would be beneficial in my opinion because of this. Certain ships could for example have some built in volume dedicated to cabins, and if one wants more cargo space, then sure it can be converted, but not 1:1. And vice versa: one could build in cabins into the cargo space of a freighter to a certain extent, but it would not be just a volume question, since one would also need to install additional life support systems. And these cabins could be less comfortable, limiting the player to lower paying taxi missions.
@@ -125,6 +130,7 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
     - On the other hand, cargo would either come in standard 1m3 container, or as a bulk of one has bulk storage tanks. (which could be more space efficient, but could only have one type of cargo)
     - Equipment hardpoints would have a size rating, defining the largest it can have.
     - Volume based equipment could be at a 0.1m3 granurality
+
 - **Combat** - another aspect that is important to a lot of people. Especially close quarters combat, because that's where the thrill is. The above ship system granularity is a huge part of this, especially the hardpoints. Right now about every ship can have one front and one rear cannon and a given amount of missiles, which isn't good for ship differentiation either. *Would need proper design, and will be a huge multi-faceted project.*
   - Multiple hardpoints per ship, with size and such limits to differentiate ships more
   - Turrets
@@ -135,31 +141,53 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
   - The above mentioned semi-turn based approach to intercepts could be interesting I think. Like if one wants to pirate, they'd pick a target, plan an intercept, and change that flight plan based on the reaction of the target. And manually finish the last leg of the intercept.
   - Ship health would benefit from some thought also. The ability to mission-kill a ship by disabling engines for example would be nice. Or disarming them, or destroying a certain equipment of theirs that would keep them from fulfiling their task. Which could also happen to the player. --> ability to put out distress calls
   - There are UI-UX considerations for combat as well, both regarding information provided, and aids for the actual combat, like lead indicators, motion trails and such.
+
 - **Non-combat gameplay** - I think it is very important to provide a lot of interesting non-combat gameplay opportunities as well. One important aspect would be in my opinion is **problem solving with ships:** either by flying, maneuvering or proper management of resources and equipment. There are several tropes we could start off from, and especially to elaborate and improve upon them:
   - Deliveries - could be more involved, with orbital rendez-vous and **external docking**, last minute reroutes, multi leg deliveries, "delivery and bring back" missions, etc.
+
   - SAR missions are great. External docking would add quite a lot to them, especially if the target is rotating due to RCS failure. Spontaneous distress calls would also be nice, either with payment or just reputation increase. Some places could even make responding to them mandatory (which could affect nearby NPC ships too). These could also be traps. 
     There cold also be SAR missions in difficult terrain (asteroid belts, complex structures, etc)
+    
   - Expeditions to unexplored systems - larger multi-leg missions with several types of sub-tasks, like surveys, resupply, couriering and such. Large player ship with subcrafts and management/overview interface could be interesting for this. 
+
+    - sturnclaw: 
+
+      and I had an idea that a way to provide an "exploration" game-loop is for the player to sign up with an exploration company as a "planetary exploration agent" - they get ferried around between systems by docking with a megaship and are employed to fly down to the surface of planets and perform some task
+
+      I think that might solve some of the issues with both the monotony and logistics of exploration - you have an actual reason to "explore" and it's accessible to players who haven't ground their way to a large ship that is capable of years-long trips into the black and then we don't have to implement the full "exploration data" game loop right away, since your employer is the one handling all of the data and just writing you a paycheck :D
+
   - Not sure how we could do exploration for it to be interesting and rewarding. Tacking on a minigame E:D style does not seem to be a good direction.
+
   - Multi-leg inspection missions at places with difficult terrain (asteroid belts, complex superstructures, mountainous places etc)
+
   - Smuggle deliveries (with more possibility of violence, and opportunity for sneaking and evasion)
+
   - Resupply missions (deliveries to uninhabited places with limited opportunities to refuel)
+
   - Salvage-ing derelicts, either planet-side of in orbit. Could be a type of mission, where you have to return the haul (or part of it), or one could buy information on derelicts, or just stumble upon them. Distress calls could lead to them also, if the player gets there late, but then it could also involve the police.
     - Derelicts could also contain clues to other derelicts or stashes and such, if the player cares to investegate.
+
   - Sight-seeing missions where the player could fly to places of interest. Each body and area could have a hidden "coolness" stat, and the player would use their knowledge of the area to figure out a nice route. The pay could then depend on the fun of the trip. And ambushes and such could happen on these trips as well, which could either add or detract from the enjoyment, thus pay. 
+
   - Mining could be made more elaborate too, but not sure how one would do that. I rarely mined in any game.
+
   - Ability to put out distress calls. Either via radio, or a special hyperspace satellite shot back into an inhabited system. Then it would be a question of consumables drain rate and waiting.
+
   - Communication would be a nice to have. Both with STC and other ships. Negotiation, taunting, threats, distress calls, gossip, trade information, e-mails, etc
     - **Light lag** could be a really nice thing to have.
+
   - STC procedures could be nice. Nothing to elaborate, but the requirement to aim a bit off from a station while on approach, and an indicated ingress or egress point one needs to fly to before flying into/out of the docks. Maybe some speed limits around the stations.
     - A larger (say 100km) sphere of influence for orbitals would be nice in my opinion. (With a distance of jump that far for NPC ships, because they tend to clutter the outbound side of the orbitals and ground ports too)
+
   - There could be opportunities to do things around cities and on planets: one pad buildings here and there (warehouses, WIP pickup points, etc), remote settlements, where you'd need to rough-land. These could be derived from currently generated buildings, cities and settlements
+
 - **Trade** - another feature which is assumed as a given. In my opinion it would benefit from some elaboration and a more systemic approach. (I'm not well versed in this aspect, never really was that interesting to me)
   - Cost/benefit and upkeep should play a more important role. Even if only for the player to start up a relatively simple spreadsheet of costs and incomes. Trade is about spreadsheets after all :P
   - Provide abilities for the player to find good trade opportunities. Like calls for material for an industrial site under construction (which later could become a small port even). Or the ability to buy tips and hints on market conditions and possible upcoming events that have effect on a certain market (kinda like the news event module we have)
   - On a larger scale (and larger ships) it would be nice to have a more managerial/overview approach. Like one then would plan around loading schedules, and would need to balance and arrange cargo even (to allow for faster selling if one flies to multiple places). For very large ships, one could use and command shuttle craft to gather up or deliver the goods to the ports even.
   - Opportunities of trade in-flight. Like an NPC could hail the player and offer a deal, and then you'd dock with them to effect that deal.
   - Previous delivery mission givers could provide some discounts on certain stuff. Reputation in a system could also affect prices a bit, so it would be beneficial to build up local reputation.
+
 - **UI-UX** - we are at a nice place with that mostly, but there's still a lot of room for improvement.
   - Ability to control as much functionality as possible from a joystick with a hat switch and buttons  without contorting the UI into weird yoga positions like E:D does.
   - HUD is a nice basis. There's room for added functionality
@@ -169,6 +197,7 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
   - Station screens could benefit from some facelift and UX improvement
   - Maps even more so (see also flight planning points)
   - Interactive cockpits for more immersive gameplay. But optional, one should be able to play the game with only a HUD as well.
+
 - **Ships**
   - Our ships are quite over the place in terms of size and capabilities. **It could be beneficial to figure and very roughly block out a balanced set of ships either by resizing and restating current ones or using very rough and simple blockouts.** 
     - I think the overhauled OPLI ships are a nice place to start from.
@@ -182,11 +211,13 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
     - **Heh, the BBS could even be planet-level, and maybe even accessible via comms.** You'd speak to the person, who would then designate which port you'd need to do the pickup, or where to go to buy that ship you choose. **So players would need to navigate to places,** which would lessen the menu based gameplay a bit.
   - **External docking**! (sorry, I would really like to have this :) )
   - **The ability to own multiple ships - separate player from ship**
+
 - **Ship design and visual language**
   - Ships should have a somewhat believable structure and looks, but not aiming for 100% realism. RCS thrusters, appropriately sized main thrusters, visible sensor and similar equipment and such. 
   - I am aiming for a bit more subtle, but unique visuals. See the reworked OPLI ships. The aim is to have distinct visuals, with not too much over-the-topness.
   - Will elaborate more in a proper visual bible. (Which I've ought to have done already)
   - There should be lots of sketches and concept art in that visual bible. See the point about very rough blockouts of ships. I'd say if we can put down a good list of balanced ships that way, we can then provide descriptions for them, which could also be an incentive for artists to contribute sketches.
+
 - **Cities and orbitals**
   - The recent improvements of the city generator are rather nice, but our cities are still just buildings randomly scattered. There's no city structure, no roads, parks, etc. It would be nice to have more natural looking cities, especially if we want to put gameplay in and around the cities a well.
   - There could be huge domed cities (either built or shielded), where the player could fly in through some kind of gate. See Cowboy Bebop or G-Police
@@ -197,6 +228,14 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
   - There could be smaller orbitals where you'd dock externally. Outposts and such.
   - There could be really huge orbitals, proper O'neill's and such, with generated terrain and cityscape. Where you'd fly in through a gate, and land on a proper ground-level port or something similar. Just to give the players something to see. Maybe even those close to city missions could happen in some of them.
   - There could be really small outpost style cities/ground ports on low population systems. 
+
+- **Planetary terrain generation** - is closely tied to that and it would be nice to up the fidelity of it
+
+  - Could feel less noise-based with real world inspired erosion and geological patterns and biome coloring
+  - Ground scatter would be nice. Both rocks and other debris and vegetation
+  - Water and other bodies of liquids would be nice too
+  - Weather patterns and clouds too
+
 - **Graphics** - Our engine is a bit behind times, and would be nice to have a more modern rendering engine, both from a "nice to look at" and "easier to work with" aspects.
   - PBR metallic based workflow - would simplify asset creation, due to the amount of readily available assets, tools and documentation
   - Decal based detailing - another thing that would simplify asset creation, and a way to improve visual fidelity. Could also provide optimization benefits due to reused materials and textures
@@ -205,7 +244,9 @@ The main aim for Pioneer is to be a quite realistic space game with a nice amoun
   - Screen Space AO - nice to have, and removes burden of baking AO onto textures.
   - Screen Space Reflections - would improve visual fidelity a lot. A lot of materials depend on reflection, like car paints and such.
   - These could also provide an incentive for aspiring contributors, who could learn a modern workflow while making assets.
+
 - **Facegen** - now that's a sore point. Still in my head though, if nothing happens, I'll tackle it eventually, even if in a 5 of each part limited manner at first.
+
 - **Out-of-ship experience** - we talked a lot about providing an out of ship experience. Be it a text adventure like interface with some images or a full-blown isometric game inside the game. 
   - "Walking outside / have rovers to drive around" keeps requested by players from time to time as well.
   - The more I think about it, the less I'm convinced we would benefit much from these, but it would enlarge the already large plate I've outlined above, and would increase the workload. 
