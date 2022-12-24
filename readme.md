@@ -17,6 +17,8 @@ This repository is a design document proposal for the open source game Pioneer S
 
 The main aim for Pioneer is to be a quite realistic space game with a nice amount of space opera. While realism is an important aspect, fun and interesting gameplay is as much as important, and we strive to hit a good balance in that regard. This document outlines the general direction we are striving to bring Pioneer towards, and the subpages elaborate on the topics more as we design them. 
 
+This document is only a proposal, and every part of is it up for discussion!
+
 ### Important aspects:
 
 - **[Emergent gameplay coming from the game systems working together](./pages/emergent_gameplay.md)** to provide unscripted and unique events. Procedural and semi-procedural generation is an important part of doing this right. 
