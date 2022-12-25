@@ -7,7 +7,7 @@ This repository is a design document proposal for the open source game Pioneer S
 
 ### **[Things that inspire Pioneer](./pages/inspirations.md)**
 
-### [Where we are at now?](./pages/current_state.md)
+### [Where are we at now?](./pages/current_state.md)
 
 ### [The team](./pages/team.md)
 
@@ -35,12 +35,11 @@ This document is only a proposal, and every part of is it up for discussion!
 
   The aim is to strike a good balance between detail and fun. We don't need to simulate every circuit breaker and screw as some (admittedly very intriguing) upcoming projects do, but on the other hand it would be nice to have enough detail to enable emergent gameplay.
 
-  **Ships size** provides a good opportunity to create meaningful differences between ships:
+  **[Ships are differentiated](./pages/ship_differentiation.md)** both by their size and intended role. 
 
-  - **Small ships** are more simple to fly, operate and maintain. They are allowed to fly to almost anywhere including residental areas. Intended for players interested in the flying, maneuvering aspects of the game. A bit like a motorcycle or a private car or a small motorboat. (Kanara, Sinonatrix, Natrix, Mola Mola, Bluenose, Deneb)
-  - **Medium ships** are a bit more complex to operate and maintain, but would provide more and more diverse opportunities at the cost of a bit harder piloting experience, and some restrictions to them. They strike a balance between providing a fun flying experience, but offering some of the managerial/operations parts of the game as well. Akin to trucks, semis and buses. (Mola Ramsayi, Storeria, Nerodia, Venturestar)
-  - **Large ships** are really complex to operate, and to fly, and there are stricter restrictions to where they can fly legally (only to ports on the edges of cities, or even only to orbitals) and most of them are tail-sitters or space-only. They primarily provide operations/managerial types of gameplay like trading, expeditions and similar complex operations. Some of them could even have small sub-crafts for certain tasks and flexibility. Akin to commercial aircrafts, trains and commercial ships. 
-  - **Huge ships** are the largest ships around, with severe restrictions to where they can go or not stemming both from the legalities to their capabilities. They can never land on planets, and would moor next to but the largest orbital stations. They always have small (or even medium sized) subcrafts, and lean heavily into a managerial/operations/ gameplay. Akin to bulk and contain freighter ships. (the wip Longnose) A ship like this could even act like a home base for the player, with an upkeep.
+  - **Ships size** dictates how simple to fly and operate a ship. The larger it is, the more complex and leans more toward a managerial/operations gameplay
+
+  - **Ship roles** are a way to differentiate between ships by the manufacturer. 
 
   **[Flying the ship and navigating between systems](./pages/flying_navigation.md)** should be a fun and interesting thing to do, and a skill to master.
 
@@ -58,6 +57,12 @@ This document is only a proposal, and every part of is it up for discussion!
 - **[Combat gameplay](./pages/combat.md)** is another very important aspect for a lot of people. Especially close quarters combat, because that's where the thrill is. This is where the above mentioned *fun trumps science* approach comes in in a manner. Hand combat should feel fun, engaging and plausible within the games context, even though one could even argue against the futility of having pilots and CQB at all owing to computers having much better reaction time and are more predictable to even forego CQB entirely for 1000+kms of engagement ranges. But we are not computers, but people, and people want experiences and stories involving people, not computers. And people like to shoot things that move and bomb things that are not. 
 
   In my opinion it is also important that combat shouldn't feel like a trivial thing. Shooting at ships in populated and well patrolled areas should have its consequences for example. But on the other hand system outskirts and especially less populated and/or frontier systems might have very lax security, and much more violent atmosphere. 
+
+- **Ner-do-well gameplay**, where the player can operate outside the law. These can mean non-combat and combat missions that have legal risks involved, such as assassinations, spying, taxiing fugitives, getaway driving, extortion, kidnapping. Piracy, illegal salvage, smuggling are among the more open opportunities. It is important that these have their legal repercussions, so then the player has to work around those. Which also means that there will be less and less legal opportunities for them, so they have to resort to more and more sketchy activities.
+
+  Of course the law and morality can vary a lot in different places, so a simple trade run count as smuggling somewhere else, and an illegal taxi mission could mean extracting some political refugees from a dictatorship or returning some ancient artifacts that were robbed from a system during a war. or smuggling in weapons and supplies for a freedom fighter movement. Not to mention that the player could even be tricked into doing something seemingly legal which then turns out to be illegal in that system. There are quite a few interesting gameplay and story opportunities here.
+
+  This also means that a network of good underground infrastructure will be important. Places to sell illegal goods, hidden pirate and smuggler bases and ports operating in the gray zone. And providers who can alter ship ID and hack into law enforcement databases to clear criminal history. (But the victims could still remember and go after the player)
 
 - [**Good UI and UX**](./pages/ui_ux.md) for the player to be able to enjoy the all the above with as little friction as it is possible. On the other side, the UI and HUD are good places to create visual interest as well. The aim is to create an UI that provides what's needed, easy and fun to use, and looks cool still. 
 
