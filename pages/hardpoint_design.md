@@ -29,3 +29,5 @@
 
 - A missile hardpoint that is tagged as rack compatible may have any ordnance rack mounted onto it of the same size. E.g. a S3 hardpoint may mount a S3 missile, a 2xS2 rack, or a 4xS1 rack.
   - An ordnance hardpoint can contain an "internal" rack, which has special-case code handling for rendering and drag calculations. These racks can only be swapped for other internal racks that the hardpoint explicitly specifies as compatible.
+
+
