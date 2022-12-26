@@ -7,7 +7,7 @@
 - Multiple hardpoints per ship, with size and power and other limits to differentiate ships more
   **[Weapons hardpoint design](./hardpoint_design.md)** outline by sturnclaw
 - Turrets
-- Different kinds of weapons with different up and downsides
+- [**Different kinds of weapons with different up and downsides**](./weapon_types.md)
 - Sensors and detection
 - Shields could work in a more unique manner, instead of just being a regenerating second health bar
 - Maneuvering should be more important in combat. Figuring out a way to eliminate jousting as much as possible would be quite important important in my opinion.
