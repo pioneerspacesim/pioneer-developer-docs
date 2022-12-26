@@ -4,7 +4,8 @@
 
 - It is a good opportunity do lean into the fact that there is no FTL communication in the universe apart from Courier ships and drones, which effectively makes all systems quite isolated from each other in a city-state manner. So there's no Galactic Police, and even neighboring systems can have very distinct security levels,
 
-- Multiple hardpoints per ship, with size and power limits to differentiate ships more
+- Multiple hardpoints per ship, with size and power and other limits to differentiate ships more
+  **[Weapons hardpoint design](./hardpoint_design.md)** outline by sturnclaw
 - Turrets
 - Different kinds of weapons with different up and downsides
 - Sensors and detection

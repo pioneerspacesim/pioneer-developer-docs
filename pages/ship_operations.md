@@ -6,6 +6,7 @@ Sturnclaw already started working/thinking on an Entity Component System, which 
 
 - I think the current "internal volume = equipment volume free for all" approach makes ships less differentiated. Which boils down ship choice mostly to deltaV and capacity. 
 - A more elaborate hardpoint system would be beneficial in my opinion because of this. Certain ships could for example have some built in volume dedicated to cabins, and if one wants more cargo space, then sure it can be converted, but not 1:1. And vice versa: one could build in cabins into the cargo space of a freighter to a certain extent, but it would not be just a volume question, since one would also need to install additional life support systems. And these cabins could be less comfortable, limiting the player to lower paying taxi missions.
+- **[Weapons hardpoint design](./hardpoint_design.md)** outline by sturnclaw
 - Larger ships could also be differentiated by more complex operation, and a more 'captain issues orders' kind of gameplay (but still retaining the possibility for manual flight). (See Nebulous Space Combat)
   - This could be especially true for trading. 
   - Subcrafts and an overview/management style interface could be a nice addition. Maybe even the ability to remote control at short distances.
