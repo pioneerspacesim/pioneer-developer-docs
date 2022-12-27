@@ -1,25 +1,25 @@
 import { scrapeSidebars } from "./theme/site-structure.js"
 
-let sidebar = {
-    text: "",
-    items: [
-        { text: "Design Overview", link: "/readme" },
-        { text: "Contributing", link: "/contributing" }
-    ]
-}
-
 export default {
     title: 'Pioneer Developer Docs',
-    description: 'Browsable developer information repository for Pioneer Space Sim',
-    cleanUrls: 'without-subfolders',
+    description: 'A shared resource and design roadmap for Pioneer development',
+    cleanUrls: 'with-subfolders',
+    base: '/pioneer-developer-docs',
 
     themeConfig: {
         nav: [
-            { text: 'Design', link: '/readme' }
+            { text: 'Design', link: '/design-document/' },
+            { text: 'Contributor Guide', link: '/contribute/' },
+            { text: 'Content Workflow', link: '/workflow/' },
+            { text: 'Github', link: 'https://github.com/pioneerspacesim/pioneer' },
         ],
         sidebar: {
-            "/": sidebar,
-            "/pages/": scrapeSidebars('pages')
+            "/contribute/": scrapeSidebars('contribute'),
+            "/design-document/": scrapeSidebars('design-document'),
+            "/workflow/": scrapeSidebars('workflow'),
+        },
+        editLink: {
+            pattern: "https://github.com/pioneerspacesim/pioneer-developer-docs/edit/master/:path"
         }
     },
 

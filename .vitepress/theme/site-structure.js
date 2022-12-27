@@ -7,8 +7,11 @@ export function scrapeSidebars(dir) {
     const files = fg.sync([ dir + '/*.md' ])
 
     let sidebarList = []
+
     for (key in categories) {
+        // duplicate the category entry but share the items list for easy access
         categories[key].items = []
+        sidebarList.push(Object.assign({}, categories[key]))
     }
 
     files.forEach((file) => {
@@ -24,18 +27,14 @@ export function scrapeSidebars(dir) {
         if (data.hidden) {
             return
         }
+
+        let link = file.replace('index.md', '').replace('.md', '')
         
         categories[category].items.push({
-            text: data.title || file,
-            link: `/${file.replace('.md', '')}`
+            text: data.title || file.replace(dir + '/', ''),
+            link: `/${link}`
         })
     })
 
-    for (key in categories) {
-        if (categories[key].items.length > 0) {
-            sidebarList.push(categories[key])
-        }
-    }
-
-    return sidebarList
+    return sidebarList.filter((val) => val.items.length > 0)
 }
