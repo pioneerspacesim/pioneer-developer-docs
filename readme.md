@@ -1,3 +1,3 @@
 # Pioneer Developer Wiki
 
-[Design Document](./Design-Document.md)
+[Design Document](./design-document.md)
