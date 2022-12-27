@@ -1,0 +1,15 @@
+/*
+ * Custom Pioneer styling for the default VitePress theme
+ */
+
+:root {
+    --vp-c-green: #7d8afd;
+    --vp-c-green-light: #8c97ff;
+    --vp-c-green-lighter: #a0a9fc;
+    --vp-c-green-dark: #4e5de6;
+    --vp-c-green-darker: #3b49c2;
+    /* TODO: style these as needed */
+    --vp-c-green-dimm-1: rgba(66, 184, 131, 0.5);
+    --vp-c-green-dimm-2: rgba(66, 184, 131, 0.25);
+    --vp-c-green-dimm-3: rgba(66, 184, 131, 0.05);
+}
