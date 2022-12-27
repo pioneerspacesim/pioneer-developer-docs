@@ -2,27 +2,27 @@
 
 A very rough overview of weapon types and their positive and negative aspects.
 
-| Stat                    | Ballistics | Railgun | Plasma gun | Laser cannon |
-| ----------------------- | ---------- | ------- | ---------- | ------------ |
-| Mass (-)                | ⬛          | ⬛⬛⬛⬛    | ⬛⬛⬛        | ⬛⬛           |
-| Energy draw (-)         | ⬛          | ⬛⬛⬛     | ⬛⬛         | ⬛⬛⬛⬛         |
-| Heat output (-)         | ⬛          | ⬛⬛⬛     | ⬛⬛         | ⬛⬛           |
-| Ammo (-)                | ⬛⬛⬛        | ⬛⬛      | ⬛          | None         |
-| Damage - hull (+)       | ⬛⬛         | ⬛⬛⬛⬛    | ⬛          | ⬛⬛⬛          |
-| Damage - component (+)  | ⬛⬛⬛        | ⬛⬛      | ⬛⬛⬛        | ⬛⬛           |
-| Damage - shield (+)     | ⬛          | ⬛⬛      | ⬛⬛⬛⬛       | ⬛            |
-| Damage - heat (+)       | Negligible | ⬛       | ⬛⬛         | ⬛⬛⬛          |
-| Rate of fire (+)        | ⬛⬛⬛⬛       | ⬛⬛      | ⬛⬛⬛        | ⬛⬛           |
-| Speed of projectile (+) | ⬛⬛         | ⬛⬛⬛     | ⬛⬛⬛⬛       | ⬛⬛⬛⬛⬛        |
-| Damage falloff (-)      | None       | None    | ⬛⬛⬛⬛       | ⬛⬛           |
-| Effective range (+)     | ⬛⬛⬛        | ⬛⬛⬛⬛    | ⬛⬛         | ⬛⬛⬛⬛         |
-| Accuracy (+)            | ⬛⬛         | ⬛⬛⬛     | ⬛          | ⬛⬛⬛⬛         |
-| Complexity              | ⬛          | ⬛⬛      | ⬛⬛⬛        | ⬛⬛           |
-| Price                   | ⬛          | ⬛⬛⬛     | ⬛⬛         | ⬛⬛⬛          |
-| Sizes available         | ⬛⬛⬛⬜⬜      | ⬜⬛⬛⬛⬛   | ⬛⬛⬛⬛⬜      | ⬜⬛⬛⬛⬛        |
-| Positives               | 17         | 21      | 20         | 24           |
-| Negatives               | 6          | 12      | 12         | 10           |
-| **Balance**             | **11**     | **9**   | **8**      | **14**       |
+| Stat                    | Ballistics | Railgun    | Pulse Cannon | Plasma Accelerator | Laser Cannon |
+| ----------------------- | ---------- | ---------- | ------------ | ------------------ | ------------ |
+| Mass (-)                | ⬜⬛⬛⬛⬛ | ⬜⬜⬜⬛⬛ | ⬜⬛⬛⬛⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬛⬛ |
+| Energy draw (-)         | ⬜⬛⬛⬛⬛ | ⬜⬜⬜⬜⬜ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬜⬛ | ⬜⬜⬜⬜⬛ |
+| Heat output (-)         | ⬜⬛⬛⬛⬛ | ⬜⬜⬜⬛⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬜⬛ | ⬜⬜⬛⬛⬛ |
+| Ammo (-)                | ⬜⬜⬜⬛⬛ | ⬜⬜⬛⬛⬛ | ⬜⬛⬛⬛⬛ | ⬜⬛⬛⬛⬛ | ⬛⬛⬛⬛⬛ |
+| Damage - hull (+)       | ⬜⬜⬜⬜⬛ | ⬜⬜⬜⬛⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬛⬛ |
+| Damage - component (+)  | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬜⬜ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬛⬛ | ⬜⬛⬛⬛⬛ |
+| Damage - shield (+)     | ⬜⬛⬛⬛⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬛⬛ | ⬜⬜⬜⬜⬜ | ⬜⬜⬛⬛⬛ |
+| Damage - heat (+)       | ⬛⬛⬛⬛⬛ | ⬜⬛⬛⬛⬛ | ⬜⬛⬛⬛⬛ | ⬜⬜⬜⬜⬜ | ⬜⬜⬜⬛⬛ |
+| Rate of fire (+)        | ⬜⬜⬜⬜⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬛⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬛⬛ |
+| Speed of projectile (+) | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬜⬛ | ⬜⬜⬜⬛⬛ | ⬜⬛⬛⬛⬛ | ⬜⬜⬜⬜⬜ |
+| Damage falloff (-)      | ⬛⬛⬛⬛⬛ | ⬛⬛⬛⬛⬛ | ⬜⬛⬛⬛⬛ | ⬜⬜⬜⬛⬛ | ⬜⬜⬛⬛⬛ |
+| Effective range (+)     | ⬜⬜⬜⬛⬛ | ⬜⬜⬜⬜⬛ | ⬜⬜⬜⬛⬛ | ⬜⬛⬛⬛⬛ | ⬜⬜⬜⬜⬛ |
+| Accuracy (+)            | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬛⬛ | ⬜⬜⬜⬛⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬜⬛ |
+| Complexity              | ⬜⬛⬛⬛⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬛⬛ | ⬜⬜⬜⬜⬛ | ⬜⬜⬛⬛⬛ |
+| Price                   | ⬜⬛⬛⬛⬛ | ⬜⬜⬜⬜⬛ | ⬜⬜⬛⬛⬛ | ⬜⬜⬜⬜⬜ | ⬜⬜⬜⬛⬛ |
+| Sizes available         | S1-S4      | S2-S6       | S1-S3      | S3-S6      | S2-S6      |
+| Positives               | 19         | 24          | 21         | 21         | 25         |
+| Negatives               | 6          | 13          | 8          | 14         | 11         |
+| **Balance**             | **13**     | **11**      | **12**     | **7**      | **14**     |
 
 - **Mass:** how heavy the weapon is, how dense. Affects gimballing speed, amount of vibrations, hence effective range and accuracy. A downside in general, but with some upsides, the larger the worst.
 
