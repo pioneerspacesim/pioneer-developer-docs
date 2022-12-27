@@ -1,31 +1,26 @@
-import { sidebar } from "./theme/site-structure.js"
+import { scrapeSidebars } from "./theme/site-structure.js"
 
-let pages = sidebar('pages')
-pages.unshift({ text: "Design Document", link: "/readme" })
+let sidebar = {
+    text: "",
+    items: [
+        { text: "Design Overview", link: "/readme" },
+        { text: "Contributing", link: "/contributing" }
+    ]
+}
 
 export default {
     title: 'Pioneer Developer Docs',
     description: 'Browsable developer information repository for Pioneer Space Sim',
+    cleanUrls: 'without-subfolders',
 
     themeConfig: {
         nav: [
             { text: 'Design', link: '/readme' }
         ],
-        sidebar: [
-            {
-                text: '',
-                items: [
-                    { text: 'Design Overview', link:'/readme' },
-                    { text: 'Current State', link: '/pages/current_state' },
-                ]
-            },
-            {
-                text: 'Pages',
-                collapsible: true,
-                link: '/readme',
-                items: sidebar('pages')
-            }
-        ]
+        sidebar: {
+            "/": sidebar,
+            "/pages/": scrapeSidebars('pages')
+        }
     },
 
     vite: {
