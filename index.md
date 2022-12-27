@@ -1,15 +1,22 @@
 ---
+title: Home
 layout: home
 
 hero:
-    name: Pioneer Developer Wiki
+    name: Pioneer
     text: Developer Documentation
     tagline: A shared resource and design roadmap for Pioneer development
     actions:
       - theme: brand
+        text: Contributor Guide
+        link: /contribute/
+      - theme: alt
         text: Design Document
-        link: /readme
+        link: /design-document/
+      - theme: alt
+        text: Content Creation
+        link: /workflow/
+      - theme: alt
+        text: Github Repo
+        link: https://github.com/pioneerspacesim/pioneer
 ---
-
-[Design Document](./design-document.md)
-

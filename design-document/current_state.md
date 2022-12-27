@@ -1,3 +1,8 @@
+---
+title: Current State
+category: outline
+---
+
 # Where we are at now?
 
 | This is a brief description of the game as it is currently. Could be updated with each release to properly describe current state. |
@@ -22,4 +27,4 @@ The player starts with a small ship and some equipment and is free to roam the g
 
 The game is extendible with mods which can replace or add functionality or assets like ships, stations, custom missions, and such. Scripting and UI definition are done with the [lua scripting language](https://www.lua.org/) and data for spaceships, hand scripted systems are stored in [json files](https://www.json.org/json-en.html).
 
-For more in-depth information, please refer to the [player wiki]() (wherever it may be in the end)
+For more in-depth information, please refer to the [player wiki](https://pioneerwiki.com/) (wherever it may be in the end)
