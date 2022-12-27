@@ -7,8 +7,8 @@ export default {
 
     themeConfig: {
         nav: [
-            { text: 'Design', link: '/design-document/' },
             { text: 'Contributor Guide', link: '/contribute/' },
+            { text: 'Design', link: '/design-document/' },
             { text: 'Content Workflow', link: '/workflow/' },
             { text: 'Github', link: 'https://github.com/pioneerspacesim/pioneer' },
         ],
