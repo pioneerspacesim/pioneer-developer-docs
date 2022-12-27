@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy Site
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,9 +21,21 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Create Artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .vitepress/dist
-          cname: dev.pioneerspacesim.net
+          path: .vitepress/dist
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
