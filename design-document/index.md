@@ -5,33 +5,44 @@ order: 1
 ---
 
 # Pioneer Space Simulator
-This repository is a design document for the open source game Pioneer Space Simulator. The aim of the document is to define a vision for the game (albeit not too granular), to focus the development efforts for the team and to provide a good and welcoming starting point to aspiring contributors. It is relatively light on granular details to avoid turning contributing to Pioneer into a second job with deadlines and such nastiness.
 
-### About Pioneer
+The primary purpose of this repository is a design document for the open source game Pioneer Space Simulator.
 
-[Pioneer Space Simulator](https://pioneerspacesim.net) is a open source space adventure game set in the Milkyway galaxy at the turn of the 33rd century. Originally Pioneer started out as an open source remake of Frontier: Elite II, initiated by Tom Morton sometime around 2010. Since then the team strives to widen the scope and are slowly maturing the game past its cradle, while honoring these traditions. 
+The aim of this document is to define a vision for the game (albeit not too granular), to focus the development efforts for the team and to provide a good and welcoming starting point to aspiring contributors. It is relatively light on granular details to avoid turning contributing to Pioneer into a second job with deadlines and such nastiness.
 
-### **[Things that inspire Pioneer](./inspirations.md)**
+## About Pioneer
+
+[**Pioneer**](https://pioneerspacesim.net) is an open-source space adventure game, set in the Milky Way galaxy shortly after the turn of the 33rd century.
+
+Originally, Pioneer started out as an open source remake of Frontier: Elite II, initiated by Tom Morton sometime around 2010. Since then, the team has endeavored to widen the scope of Pioneer into a game in its own right and are slowly maturing the game while honoring these traditions. 
+
+> Pioneer: a game of lonely space adventure.
+
+The tagline pretty much sums up the spirit of Pioneer. You are one person in a vast universe that does not care about you. The day-to-day happenings of the universe will continue regardless of your presence — or absence. At best, you can hope to influence the course of events somewhat. At worst, you'll try to avoid winding up an unmarked impact crater on a barren moon.
+
+Pioneer [**takes inspiration**](./inspirations.md) from many games, though its primary focus is to be an interstellar space adventure game with solar-system-scale simulation elements. The game makes an effort to simulate a living world around the player, but it is not one in which every aspect can be maniupulated. Even at the height of their progression, the player will never control the SolFed bureaucracy or own an entire system.
 
 ### [Where are we at now?](./current_state.md)
 
-### [The team](./team.md)
+### [Current team](./team.md)
 
 ### [Development infrastructure](./dev_infrastructure.md)
 
-## Design document proposal
+## Design document outline
 
-The main aim for Pioneer is to be a quite realistic space game with a nice amount of space opera. While realism is an important aspect, fun and interesting gameplay is as much as important, and we strive to hit a good balance in that regard. This document outlines the general direction we are striving to bring Pioneer towards, and the subpages elaborate on the topics more as we design them. 
+The main aim for Pioneer is to be a quite realistic space game with a nice amount of space opera. While realism is an important aspect, fun and interesting gameplay is just as important, and we strive to hit a good balance in that regard. This document outlines the general direction we are striving to bring Pioneer towards, and the subpages elaborate on the topics more as we design them. 
 
 This document is only a proposal, and every part of is it up for discussion!
 
 ### Important aspects:
 
-- **[Emergent gameplay coming from the game systems working together](./emergent_gameplay.md)** to provide unscripted and unique events. Procedural and semi-procedural generation is an important part of doing this right. 
+- **[Emergent gameplay](./emergent_gameplay.md)** coming from game systems working together to provide unscripted and unique events. Procedural and semi-procedural generation is an important part of doing this right. 
 
 - **Procedurally generated game world** as a basis for a smaller amount of interesting hand-crafted places.
 
-- **Gameplay over simulation.** While Pioneer strives for a high level of realism, but it is a game first and foremost. Scientific aspects should enhance the gameplay, not detract from it. But on the other hand, the basis is still in reality, and it is important to find ways to build fun gameplay on this reality before going for the trope or arcade solution. Having human pilots for example would seem quite a bad choice from a scientific/practical sense, but we want to create a game for people, not flight computers, so human pilots are here to stay.
+- **Gameplay over simulation.** While Pioneer strives for a high level of realism, it is a game first and foremost. Scientific aspects should enhance the gameplay, not detract from it. But on the other hand, the basis is still in reality, and it is important to find ways to build fun gameplay on this reality before going for the trope or arcade solution. Having human pilots for example would seem quite a bad choice from a scientific/practical sense, but we want to create a game for people, not flight computers, so human pilots are here to stay.
+
+## Gameplay direction
 
 - **[Ship operation gameplay](./ship_operations.md)** Things like power and heat management, handling of maintenance of equipment. Opportunities for those who like to tinker, optimize, but with close ties to the intended emergent nature of the game with situations created by breakdown of ship parts at the worst time possible because of neglect and circumstance.
 
@@ -70,15 +81,17 @@ This document is only a proposal, and every part of is it up for discussion!
 
   This also means that a network of good underground infrastructure will be important. Places to sell illegal goods, hidden pirate and smuggler bases and ports operating in the gray zone. And providers who can alter ship ID and hack into law enforcement databases to clear criminal history. (But the victims could still remember and go after the player)
 
-- [**Good UI and UX**](./ui_ux.md) for the player to be able to enjoy the all the above with as little friction as it is possible. On the other side, the UI and HUD are good places to create visual interest as well. The aim is to create an UI that provides what's needed, easy and fun to use, and looks cool still. 
+## Visual direction
+
+- [**Good UI and UX**](./ui_ux.md) are important for the player to be able to enjoy the all the above with as little friction as it is possible. On the other side, the UI and HUD are good places to create visual interest as well. The aim is to create an UI that provides what's needed, easy and fun to use, and looks cool still.
 
   - **Interactive cockpits** are a very good opportunity to provide a more immersive experience, and to add visual character. On the other hand it is important that the game is playable properly with only the HUD, mouse and keyboard shortcuts.
 
 - **[Graphics](./graphics.md)** should strike a good balance between high visual quality and decent performance on a common family computer as much as humanely possible. Modern PBR based rendering, the decal workflow and screen space effects can also lighten the workload for asset creators.
 
-- **The visual language** of the game aims for a believable, but not strictly realistic visuals while providing a distinct and characteristic look and feel for the game. Visuals are a bit more subtle than most popular science fiction. The reworked OPLI ships show this approach for example. 
+- **The visual language** of the game aims for believable, but not strictly realistic visuals while providing a distinct and characteristic look and feel for the game. Visuals are a bit more subtle than most popular science fiction. The reworked OPLI ships show this approach for example. 
 
-  - **[Ships](./ship_design.md)** have certain sets of visible details with consistent shape language and proportions, that show or allude to the problems of spaceflight. Such as radiators, RCS thrusters, sensors and so on. Most ships also have visible cockpits, even if having one would not be practical in real life. 
+  - **[Ships](./ship_design.md)** have certain sets of visible details with consistent shape language and proportions, that show or allude to the problems of spaceflight. Such as radiators, RCS thrusters, sensors and so on. Most ships also have visible cockpits or control rooms as a concession to gameplay considerations, even if having one would not be practical in real life. 
 
   - **[Planets](./planets.md)** surfaces are aiming to be procedurally generated and rich in detail up-close. Plausible geographic features and texturing and weather effects such as cloud cover or nice ground scatter objects for example would be very important. But there should be a balance to it, because this topic alone could be a huge project in itself and there's a point of diminishing returns from a gameplay standpoint.
 
@@ -87,6 +100,8 @@ This document is only a proposal, and every part of is it up for discussion!
     **Orbital stations** could also be procedurally or semi-procedurally generated for such roles and gameplay opportunities and could vary in size as well from small outposts to huge O'Neill's Cylinders and Stanford Toruses with a generated landscape.
 
   - [**Facegen**](./facegen.md) the everlasting sore-point of mine
+
+## Additional considerations
 
 - [**Out-of-ship experience**](./out_of_ship.md) comes up from time to time in one form or other, be it a text adventure layer an isometric RPG or even a full blown FPS layer to the game. The text adventure level of this is the most feasible, and could be incorporated with a good messaging and BBS interface. The later two on the other hand would practically mean making another game and fully integrating it with the existing parts. Which would be an enormous amount of work for even a legion of developers both from coding and asset creation sides. Maybe in the future when Pioneer is mature enough to our liking and there's not much else to add and polish, then we might contemplate it, but **we are not planning on taking steps towards it in the foreseeable future.** 
 
