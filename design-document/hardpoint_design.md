@@ -1,3 +1,8 @@
+---
+title: Hardpoint System
+category: design-docs
+---
+
 ## Weapon Hardpoints
 
 - Weapon hardpoint sizes increment by 2.25x volume (1.3103 uniform scale)

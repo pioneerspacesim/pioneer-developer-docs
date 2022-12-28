@@ -1,4 +1,9 @@
-## Inspiration
+---
+title: Inspiration
+category: outline
+---
+
+# Inspiration
 
 - [Frontier: Elite II](https://en.wikipedia.org/wiki/Frontier:_Elite_II). by David Braben and Ian Bell - the seed of Pioneer Space sim, which started as [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) re-implemetation of Frontier.
 - [Independence War 1. and 2](https://en.wikipedia.org/wiki/Independence_War_2:_Edge_of_Chaos). by Particle Systems - these games have very a satisfying flight model and enjoyable combat

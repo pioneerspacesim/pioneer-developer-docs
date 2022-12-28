@@ -1,4 +1,9 @@
-## Planetary terrain generation
+---
+title: Planetary Generation
+category: design-docs
+---
+
+# Planetary terrain generation
 
 - **Planetary terrain generation** - is closely tied to that and it would be nice to up the fidelity of it
   - Could feel less noise-based with real world inspired erosion and geological patterns and biome coloring

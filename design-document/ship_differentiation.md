@@ -1,6 +1,11 @@
-## Ship sizes and roles
+---
+title: Ship Roles
+category: design-docs
+---
 
-### Main ship characteristics
+# Ship sizes and roles
+
+## Main ship characteristics
 
 I mention some characteristics bellow that would be nice to have in my opinion:
 
@@ -14,7 +19,7 @@ I mention some characteristics bellow that would be nice to have in my opinion:
 
 - These directly tie into the ship operation gameplay, and would need an ECS system as a basis.
 
-### Ship size
+## Ship size
 
 Ships size dictates how simple to fly and operate a ship. The larger it is, the more complex and leans more toward a managerial/operations gameplay
 
@@ -23,7 +28,7 @@ Ships size dictates how simple to fly and operate a ship. The larger it is, the 
 - **Large ships** are really complex to operate, and to fly, and there are stricter restrictions to where they can fly legally (only to ports on the edges of cities, or even only to orbitals) and most of them are tail-sitters or space-only. They primarily provide operations/managerial types of gameplay like trading, expeditions and similar complex operations. Some of them could even have small sub-crafts for certain tasks and flexibility. Akin to commercial aircrafts, trains and commercial ships. 
 - **Huge ships** are the largest ships around, with severe restrictions to where they can go or not stemming both from the legalities to their capabilities. They can never land on planets, and would moor next to but the largest orbital stations. They always have small (or even medium sized) subcrafts, and lean heavily into a managerial/operations/ gameplay. Akin to bulk and contain freighter ships. (the wip Longnose) A ship like this could even act like a home base for the player, with an upkeep.
 
-### Ship roles
+## Ship roles
 
 These are the intended useage areas by the manufacturer.  Defines hardpoint availability, default equipment sizes and performace, and thus price as well. To an extent ships can be converted between roles, but they will never be as efficient as a purpose-built ship.
 

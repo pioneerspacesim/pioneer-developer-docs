@@ -1,6 +1,9 @@
+---
+title: Out-of-Ship Experience
+category: design-docs
+---
 
-
-## **Out-of-ship experience** 
+# **Out-of-ship experience** 
 
 We talked a lot about providing an out of ship experience. Be it a text adventure like interface with some images or a full-blown isometric game inside the game. 
 

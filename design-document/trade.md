@@ -1,4 +1,9 @@
-## **Trade**
+---
+title: Trade
+category: design-docs
+---
+
+# **Trade**
 
 Another feature which is assumed as a given. In my opinion it would benefit from some elaboration and a more systemic approach. (I'm not well versed in this aspect, never really was that interesting to me)
 
@@ -10,7 +15,7 @@ Another feature which is assumed as a given. In my opinion it would benefit from
 
 
 
-#### Strunclaw-s station economy outline:
+## Sturnclaw's station economy outline:
 
 - Split stock and demand
   - low stock = high buy price, high demand = high sell price

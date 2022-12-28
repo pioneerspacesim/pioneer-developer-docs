@@ -1,4 +1,9 @@
-## Development infrastructure
+---
+title: Infrastructure
+category: outline
+---
+
+# Development infrastructure
 
 Since we are at the verge of an infrastructure change, we might as well think through what we have now and what other tools we would benefit from. This is one reason I've written this design document outline, so the development could gain a bit more focus, thus motivation and spirit. 
 

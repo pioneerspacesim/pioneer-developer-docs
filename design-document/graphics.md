@@ -1,4 +1,9 @@
-## Graphics and visuals
+---
+title: Graphics and Visuals
+category: design-docs
+---
+
+# Graphics and Visuals
 
 **Graphics** - Our engine is a bit behind times, and would be nice to have a more modern rendering engine, both from a "nice to look at" and "easier to work with" aspects.
 

@@ -1,4 +1,9 @@
-## Development team of Pioneer
+---
+title: Development Team
+category: outline
+---
+
+# Development team of Pioneer
 
 Pioneer is a volunteer effort, chugging along for 12 years now. Current active(ish) team members are:
 

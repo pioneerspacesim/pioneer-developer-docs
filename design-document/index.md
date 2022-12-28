@@ -1,10 +1,11 @@
 ---
-title: Design Document
+title: Overview
 category: outline
+order: 1
 ---
 
 # Pioneer Space Simulator
-This repository is a design document proposal for the open source game Pioneer Space Simulator. The aim of the document is to define a vision for the game (albeit not too granular), to focus the development efforts for the team and to provide a good and welcoming starting point to aspiring contributors. It is relatively light on granular details to avoid turning contributing to Pioneer into a second job with deadlines and such nastiness.
+This repository is a design document for the open source game Pioneer Space Simulator. The aim of the document is to define a vision for the game (albeit not too granular), to focus the development efforts for the team and to provide a good and welcoming starting point to aspiring contributors. It is relatively light on granular details to avoid turning contributing to Pioneer into a second job with deadlines and such nastiness.
 
 ### About Pioneer
 

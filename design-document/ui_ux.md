@@ -1,4 +1,9 @@
-## **UI-UX**
+---
+title: User Interface
+category: design-docs
+---
+
+# **UI-UX**
 
 - We are at a nice place with that mostly, but there's still a lot of room for improvement.
 

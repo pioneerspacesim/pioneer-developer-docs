@@ -1,4 +1,10 @@
-## **Ship design and visual language**
+---
+title: Ship Design
+category: design-docs
+---
+
+
+# **Ship design and visual language**
 
 - Ships should have a somewhat believable structure and looks, but not aiming for 100% realism. RCS thrusters, appropriately sized main thrusters, visible sensor and similar equipment and such. 
 - I am aiming for a bit more subtle, but unique visuals. See the reworked OPLI ships. The aim is to have distinct visuals, with not too much over-the-topness.

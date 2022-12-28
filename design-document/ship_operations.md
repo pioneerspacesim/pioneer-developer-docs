@@ -1,4 +1,9 @@
-## Ship systems and operations
+---
+title: Ship Gameplay
+category: design-docs
+---
+
+# Ship systems and operations
 
 **Ship systems** - an important part of emergent gameplay is a granular enough ship systems simulation. This could include equipment damage, wear and tear, quality, efficiency, heat and energy management. A lot of people enjoy this operational aspect of a space game, and we could lean into it with equipments generated RPG style from a pool of points, possibly even procedurally. Another important aspect is ship differentiation by roles and intentions (and the possible misuse of ships due to what's being available) *Certainly a large project with tentacles in about every aspect and other porject*
 

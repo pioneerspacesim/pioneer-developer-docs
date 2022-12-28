@@ -1,4 +1,9 @@
-## Non-combat gameplay
+---
+title: Non-Combat Gameplay
+category: design-docs
+---
+
+# Non-combat gameplay
 
 **Non-combat gameplay** - I think it is very important to provide a lot of interesting non-combat gameplay opportunities as well. One important aspect would be in my opinion is **problem solving with ships:** either by flying, maneuvering or proper management of resources and equipment. There are several tropes we could start off from, and especially to elaborate and improve upon them:
 

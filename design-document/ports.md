@@ -1,4 +1,9 @@
-## **Cities and orbitals**
+---
+title: City Generation
+category: design-docs
+---
+
+# **Cities and orbitals**
 
 - The recent improvements of the city generator are rather nice, but our cities are still just buildings randomly scattered. There's no city structure, no roads, parks, etc. It would be nice to have more natural looking cities, especially if we want to put gameplay in and around the cities a well.
 - There could be huge domed cities (either built or shielded), where the player could fly in through some kind of gate. See Cowboy Bebop or G-Police

@@ -1,4 +1,9 @@
-## Combat
+---
+title: Combat
+category: design-docs
+---
+
+# Combat
 
 - Another aspect that is important to a lot of people. Especially close quarters combat, because that's where the thrill is. The above ship system granularity is a huge part of this, especially the hardpoints. Right now about every ship can have one front and one rear cannon and a given amount of missiles, which isn't good for ship differentiation either. *Would need proper design, and will be a huge multi-faceted project.*
 

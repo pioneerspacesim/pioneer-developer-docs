@@ -1,4 +1,9 @@
-## Flight and navigation
+---
+title: Flight and Navigation
+category: design-docs
+---
+
+# Flight and Navigation
 
 - **Full scale solar systems and the realistic direct transfer travel** in them is one of the unique and interesting points of the game. It would benefit from UI-UX improvements, like a proper travel planning interface and some more visual feedback in the flight UI, like showing the orbits of bodies. *This could be a project on its own.*
 

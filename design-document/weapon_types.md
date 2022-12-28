@@ -1,3 +1,8 @@
+---
+title: Weapon Types
+category: design-docs
+---
+
 # Weapon types
 
 A very rough overview of weapon types and their positive and negative aspects.
