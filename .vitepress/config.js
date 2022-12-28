@@ -1,4 +1,10 @@
+import md_footnote from 'markdown-it-footnote'
+
 import { scrapeSidebars } from "./theme/site-structure.js"
+
+let mdConfig = (md) => {
+    md.use(md_footnote)
+}
 
 export default {
     title: 'Pioneer Developer Docs',
@@ -20,6 +26,10 @@ export default {
         editLink: {
             pattern: "https://github.com/pioneerspacesim/pioneer-developer-docs/edit/master/:path"
         }
+    },
+
+    markdown: {
+        config: mdConfig
     },
 
     vite: {
