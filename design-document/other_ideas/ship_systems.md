@@ -1,7 +1,7 @@
 ---
 title: Ship Systems
 ---
-
+# Ship Systems
 ## Design goals
 
 -   add more variety beyond \"ships have hit points and sometimes also shield points\"
