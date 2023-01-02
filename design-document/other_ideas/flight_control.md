@@ -1,7 +1,7 @@
 ---
 title: Flight control
 ---
-#FLight Control
+# Flight Control
 
 planning and notes for kuroneko\'s flight control / joystick control related changes.
 **Note: most of this is superceded by #[5371 by Gliese852](https://github.com/pioneerspacesim/pioneer/pull/5371)**
