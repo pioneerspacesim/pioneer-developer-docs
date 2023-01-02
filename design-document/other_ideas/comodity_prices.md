@@ -1,3 +1,8 @@
+---
+title: Commodity prices
+---
+# Commodity Prices
+
 This page tries to collect what we want, and where we want to go with
 the next version of economy system in pioneer. An ideal case would be to
 have a dynamical economy. Perhaps a smaller version of the [Star citizen
