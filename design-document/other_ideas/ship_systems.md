@@ -22,6 +22,42 @@ Todo: ask Brian for a simple design
 
 A reactor produces power, which other systems draw to function.
 
+A ship has a power budget. Power is sourced, and used. All power used must be expelled, or will become heat. Here's how that might happen:
+
+A ship provides a given amount of power, measured in Watts. That power source is continually available, and of undetermined origin and nature (solar, nuclear, fairies, hand waves, etc). This power source can be supplemented by additional power sources. Any item of equipment could potentially be a power source.
+
+All equipment requires a certain amount of continual power. If the combined power requirement of all equipment is not met, the most recently powered up items will not function.
+
+All equipment produces waste heat, proportional to its power, and also measured in Watts. A power sink is required to remove this heat. Additional sinks are required to deal with additional powered equipment. Sinks can dispose of heat, or store it, as gameplay, balance and so forth require. Sinks can also dispose of heat introduced externally, through re-entry, solar proximity, combat, etc.
+
+If there are not enough sinks, then hull and/or cabin temperature rises. If there are more than enough, then the temperature falls.
+
+Equipment can be powered down into a standby mode, reducing power requirements and heat production.
+
+Equipment can be powered off, zeroing power requirements and heat production.
+
+Powering up from standby can be done in flight. Powering up from off can only be done whilst docked.
+
+So, each item of equipment has a set of values:
+
+- Power supply (powered on) (Watts)
+- Power supply (standby) (Watts)
+- Power requirement (powered on) (Watts)
+- Power requirement (powered off) (Watts)
+- Power dissipation (powered on) (Watts)
+- Power dissipation (powered off) (Watts)
+- Heat storage (Joules)
+and the rest falls into place. Additionally, the ship has:
+- Power supply (Watts)
+- Power dissipation (Watts)
+- Heat storage (Joules)
+
+Exceed that heat storage, take damage. Effectively, that's your hull/cabin temp.
+
+A docked ship should have as much power as it needs, as long as it is docked. It should also have as much dissipation as it needs.
+
+A landed ship should perhaps have extra dissipation available, proportional to atmospheric pressure. 
+
 ### Charge
 
 Instead of using power at a constant rate, a system may charge, and then store the energy. A fully charged system does not draw any power until it needs to be recharged. Relevant to: energy weapons, hyperdrive, shield.
