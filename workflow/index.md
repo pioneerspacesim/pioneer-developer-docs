@@ -4,5 +4,13 @@ category: outline
 ---
 
 # Content Creation Workflow
+### Scripts and missions
+### Design
+### [3D assets](./3d_assets/index.md)
+### Facegen
+### Music and sound
 
-Placeholder for wiki content
+### Mod creation
+
+### Translation
+### Licencing
