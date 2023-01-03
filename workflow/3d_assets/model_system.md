@@ -1,6 +1,5 @@
 ---
 title: Model system Overview
-category: content_creation
 ---
 
 # Model system overview
