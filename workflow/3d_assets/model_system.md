@@ -329,7 +329,7 @@ These can define the point where the weapon projectiles are shot from.
 
 Set up in the model file with their starting and end frames:
 
-```.model
+```
 anim gear_down 1 100
 ```
 
@@ -360,7 +360,7 @@ Additionally Pioneer provides a model viewer with even more functionality like s
 
 One can even include the model name, and it will load it on start:
 
-```shell
+```
 pioneer.exe -mv coronatrix
 ```
 
