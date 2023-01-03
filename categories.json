@@ -6,6 +6,10 @@
         "text": "Design Documentation",
         "collapsible": true
     },
+    "contributing": {
+        "text": "Contributing",
+        "collapsible": true
+    },
     "uncategorized": {
         "text": "Uncategorized",
         "collapsible": true
