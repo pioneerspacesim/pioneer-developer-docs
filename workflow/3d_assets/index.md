@@ -18,14 +18,10 @@ Detailed description of the 3D asset workflow and the various definition files, 
 Workflow and tools overview
 
 [Model system overview](./model_system.md)
-
-   Ship setup
-
-   Cockpit setup
-
-   Space station and port setup
-   
-   Building setup
+   - Ship setup
+   - Cockpit setup
+   - Space station and port setup
+   - Building setup
 
 Model viewer
 
