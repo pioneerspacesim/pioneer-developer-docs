@@ -24,6 +24,8 @@ Workflow and tools overview
    Cockpit setup
 
    Space station and port setup
+   
+   Building setup
 
 Model viewer
 
