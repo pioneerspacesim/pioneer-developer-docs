@@ -1,5 +1,6 @@
 ---
 title: Model system Overview
+category: content_creation
 ---
 
 # Model system overview
@@ -59,7 +60,7 @@ Models must be placed under **data/models,** preferably in their respective cate
 
 To define a model, create a ```name_here.model``` text file next to your exported mesh. You can use the example above as a template:
 
-```.model
+```
 #Comments can be written like this
 #Define all used materials first
 Material some-material
@@ -101,7 +102,7 @@ anim idle 101 201
 
 Only material names are imported from the 3D models, so you need to set up the material properties and used textures in the .model file like this:
 
-```.model
+```
 material material_name
 diffuse 0.8 0.7 0.7
 specular 0.3 0.3 0.3
@@ -114,7 +115,7 @@ tex_glow glow_texture.png
 
 If the texture is in the same directory as the .model file, then only the filename is needed. You can also use textures from other directories via relative paths:
 
-```.model
+```
 tex_diff diffuse_texture.png
 tex_diff ../othership/other_texture.png
 ```
