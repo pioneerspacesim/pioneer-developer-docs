@@ -44,7 +44,7 @@ We are using the Assimp importer, which theoretically supports [many different f
 
 - For static geometry, such as buildings, OBJ is recommended, this may allow for some optimizations
 
-The only officially tested 3D modelling program at the moment is [Blender 3.4](http://www.blender.org/. For blender, a quick checklist is:
+The only officially tested 3D modelling program at the moment is [Blender 3.4](http://www.blender.org/). For blender, a quick checklist is:
 
 - Coordinates: X right, Y forward, Z up:
 
