@@ -38,7 +38,7 @@ Max: the biggest we could get away with on the model
 | Orbital S3 | 106*140m | 0-100m | 106*140m |
 
 ## Ship roles
-[See the design document for more elaborate explanation](design-document/ship_differentiation.md#ship-roles)
+See the design document for more elaborate explanation
 - **Utility** - Utility and maintenance ships. Typically low deltaV. Including container tugs. More for background stuff than for the player. Might become more useful when bring-along ships are implemented.
 - **Shuttle** - short range ships, not intended for long trips or inter-system travel. Small tanks, low deltaV, usually mediocre thrust. Usually don't have accommodations for longer trips. Simpler built, easier and cheaper to operate, but quite limited. They can also be brought along by larger ships. Sometimes they use the same chassis than a transport or freighter
    - Cargo shuttle: for moving cargo between locations. Cargo tugs might be in this class instead.
