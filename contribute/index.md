@@ -30,7 +30,7 @@ The most important aspect of contributing to Pioneer is maintaining good communi
     - **Forums, IRC** - discuss implementation details and determine concrete goals for the idea.
     - **WIP Pull Request** - propose a solution demonstrated in code. If accepted, this can be expanded to the final implementation.
 3. **Document or implement discussed and accepted ideas:**
-    - [**Design Document**](/design-document) to record long-term goals and provide information for future development.
+    - [**Design Document**](/design-document/index.md) to record long-term goals and provide information for future development.
     - **Pull Request** - full implementation of discussed idea; subject to further code review and refinement.
     - **Issue tracker** - create multiple issues containing focused and implementable tasks to divide up a fully-accepted plan.
 
@@ -119,7 +119,8 @@ If you feel like improving our homepage or documentation, then feel free to dig 
 It helps the developers greatly to know the goal they're working towards. You can help with brainstorming on various topics, and gather information:
 
 -   Hipparcos and Tycho-2 catalogue data of star position in some, easy to parse, raw text format. We/FluffyFreak need this to make the stars (on the skybox/backdrop) seen when flying to reflect their actual positions. See [dev forum post](https://forum.pioneerspacesim.net/viewtopic.php?f=3&t=302) for more info.
--   Edit the wiki page detailing how [Commodity Prices](Commodity_Prices "wikilink") should be goverened by planet environments, etc. See various posts on dev forum, like [Rethinking the planets](https://forum.pioneerspacesim.net/viewtopic.php?f=3&t=201) and [Life in Pioneer](https://forum.pioneerspacesim.net/viewtopic.php?f=3&t=145&start=20), [Unorthodox orbital configurations](https://forum.pioneerspacesim.net/viewtopic.php?f=3&t=204) (about Lagrange points), and [this](https://forum.pioneerspacesim.net/viewtopic.php?p=2275#p2275) post.
+-   Edit the wiki page detailing how [Commodity Prices](/design-document/economy.md) should be goverened by planet environments, etc.
+    - See various posts on dev forum, like [Rethinking the planets](https://forum.pioneerspacesim.net/viewtopic.php?f=3&t=201) and [Life in Pioneer](https://forum.pioneerspacesim.net/viewtopic.php?f=3&t=145&start=20), [Unorthodox orbital configurations](https://forum.pioneerspacesim.net/viewtopic.php?f=3&t=204) (about Lagrange points), and [this](https://forum.pioneerspacesim.net/viewtopic.php?p=2275#p2275) post.
 
 ## Writing
 

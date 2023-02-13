@@ -65,8 +65,6 @@ There are instructions for how to compile the code included in the repository:
 
 [COMPILING.txt](https://github.com/pioneerspacesim/pioneer/blob/master/COMPILING.txt)
 
-Also available: [Compiling](Compiling)
-
 ### Debugging
 
 For developers on Linux, gdb can be used for debugging

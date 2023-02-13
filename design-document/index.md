@@ -67,7 +67,7 @@ This document is only a proposal, and every part of is it up for discussion!
 
 - **Problem solving gameplay**. Partially an effect of the above aspects. It is important that the game provides situations and problems the player can solve by using the systems at their disposal, and especially by flying their ship. Where they can make decisions, plan an action, execute it, and scramble to fix things when something inevitably go sideways. This includes situations where one needs to utilize their skills in flying and operating their ship, and situations they need to get out of because they neglected things that should have been done. 
 
-  - **[Trading gameplay](./trade.md)** is a main area of this and could offer lots of emergent gameplays, if it is elaborated upon. 
+  - **[Trading gameplay](./economy.md)** is a main area of this and could offer lots of emergent gameplays, if it is elaborated upon. 
 
 - **[Non-combat gameplay](./non_combat.md)** It is important to provide rich gameplay opportunities via interesting missions, events, characters and places that enhance and spice up the systemic aspect of the game. Things to be discovered or figured out. (Also see the *problem solving gameplay* point above) Without the need need to shoot everything that's moving (and bomb everything that's not)
 

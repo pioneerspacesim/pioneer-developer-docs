@@ -5,7 +5,7 @@ category: contributing
 
 # Coding Conventions
 
-This page describes some of the code style used in Pioneer. As of 2019, we rely on clang to do our code-formatting checks for us. This means a Pull Request (PR) with incorrectly formatted code will fail the automated test. Please read [Code Formatting](Coding_Conventions "wikilink") for how to avoid this, and how to have our clang-format.sh script check your code before committing.
+This page describes some of the code style used in Pioneer. As of 2019, we rely on clang to do our code-formatting checks for us. This means a Pull Request (PR) with incorrectly formatted code will fail the automated test. Please read [Code Formatting](./coding-conventions.md) for how to avoid this, and how to have our clang-format.sh script check your code before committing.
 
 ## Licensing
 
