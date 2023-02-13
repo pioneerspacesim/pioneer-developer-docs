@@ -9,7 +9,7 @@ let mdConfig = (md) => {
 export default {
     title: 'Pioneer Developer Docs',
     description: 'A shared resource and design roadmap for Pioneer development',
-    cleanUrls: 'with-subfolders',
+    cleanUrls: true,
     ignoreDeadLinks: true,
 
     themeConfig: {
