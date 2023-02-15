@@ -48,6 +48,12 @@ Missiles are the primary means of combat beyond the 1-2km gun range. They can be
 A hardpoint can specify that it is able to mount a missile, an ordnance rack, an ordnance pod, or any combination of the above. Ordnance racks and pods occupy the primary hardpoint, and provide a 'slot group' that can mount missiles of a specific size. Support for mixing different types of missiles in the same rack is an optional feature and most likely will not be targeted initially.
 
 - Missiles templates increment volume by 2.6x (1.375 uniform scale) 
+- There needs to be a tradeoff between running multiple small missiles vs. a single large missile:
+  - Total missile damage / DPS scales by 1.8x per size increment
+  - Missile armor penetration / effective impact scales by 2.1x per size increment
+  - Larger missiles are more effective against large/hard targets
+  - Smaller missiles are better for engaging agile/unarmored targets
+- Missiles do not scale as large as weapon hardpoints do; instead "volume of fire" is utilized
 - Missile size classes:
 	- S0: 1.1m, 90mm diameter; unguided rockets / podded A2G missiles
 	- S1: 1.9m, 180mm diameter; short-range guided missiles
@@ -68,5 +74,28 @@ A hardpoint can specify that it is able to mount a missile, an ordnance rack, an
 
 - A missile hardpoint that is tagged as rack compatible may have any ordnance rack mounted onto it of the same size. E.g. a S3 hardpoint may mount a S3 missile, a 2xS2 rack, or a 4xS1 rack.
 
+## Internal Equipment
 
+Most internal equipment falls into one of three categories:
 
+- Freely configurable Equipment
+- Slot-mounted Equipment
+- Computer Modules
+
+Freely configurable equipment is the simplest type of equipment. All equipment items define a volume they consume when mounted, and an amount of mass they add to the ship's weight. A freely-configurable equipment item has no special requirements for placement or connections, and other than power, system bandwidth (when implemented), or specific module-type limits, has no restrictions as to how many can be mounted. Any size of this type of equipment can be mounted in the hull, provided there is enough equipment volume to fit it.
+
+Slot-mounted equipment adds an extra restriction to freely configurable equipment. In addition to consuming equipment volume, power, and system bandwidth, slot-mounted equipment must have specific considerations made as to its placement and connections to the hull. Each hull specifies a list of equipment slots which specify the type of equipment, the size(s) that can be mounted, and how many slots are present.
+
+An example of this type of equipment is a hyperdrive or shield generator - the former requires a close connection to the engines, and the latter needs to be connected to emitters on the hull of the ship. The size of an equipment slot hides away other considerations which would be too annoying to track - e.g. the maximum througput of the shield emitters, or the hyperdrive.
+
+Computer modules are a special type of equipment item - they consume no equipment volume and are direct "upgrades" of the ship's capability. In return, they're mounted into a limited number of slots in the ship's computer, and consume a proportionate amount of system bandwidth. Ship computers are specified on a per-hull basis and provide a number of Small, Medium, and Large module slots. The ship's computer cannot be easily replaced without significant modification to the ship.
+
+## Hull Variants
+
+Each ship hull type has a single setup of hardpoints and internal slots defined by the internal and external structure of the ship. This represents what can be fit within the limits of the internal structure and configuration of the ship. However, some enterprising pilots may want to make more significant changes to the layout of their ship to tailor it for a specific purpose.
+
+To support this gameplay, some ships may be able to be reconfigured to support a completely different style of gameplay. For example, a ship's internal missile bay might be replaced with an external weapon hardpoint, the drives reconfigured to make room for a larger hyperdrive, or a bulk freighter's cargo hold replaced with fighter launch bays. Hull variants represent this level of configuration. With the right materials, you can pay a mechanic to retrofit your ship to a different hull variant.
+
+Hull variants are expected to be predefined on a per-ship basis, rather than freely generated at runtime. The internal equipment system already provides a large amount of customization potential, and hull variants are intended to augment that system to handle customizations that would require major changes to the ship's external mesh.
+
+Hull Variants are intended as a future expansion to the equipment system.
