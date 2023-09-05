@@ -17,6 +17,9 @@ hero:
         text: Content Creation
         link: /workflow/
       - theme: alt
-        text: Github Repo
+        text: Lua API
+        link: https://codedoc.pioneerspacesim.net/
+      - theme: alt
+        text: Github
         link: https://github.com/pioneerspacesim/pioneer
 ---
