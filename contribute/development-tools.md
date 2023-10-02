@@ -5,7 +5,7 @@ category: contributing
 
 # Development Tools
 
-Here we aim to document little known features that developers add to help themselves in the development process, wheather that be debugging, profiling, or what else
+Here we aim to document little known features that developers add to help themselves in the development process, wheather that be debugging, [profiling](./profiling.md), or what else
 
 ## Debug
 
@@ -52,43 +52,7 @@ Pioneer can dump galaxy information, to make sure the galaxy hasn't changed, or 
 
 The quit confirmation box can be supressed by putting ConfirmQuit=0 in the pioneer configuration file
 
-## Profiling
-
-For Profiling, one needs some tools installed?
-
-Now new profiling functions merged:
-[Add zone-based profiling support \#5168](https://github.com/pioneerspacesim/pioneer/pull/5168)
-
-There's also support for `chrome://tracing` format event to JSON, for better visualization, since
-[Add Chrome-Tracing output support to profiler \#5380](https://github.com/pioneerspacesim/pioneer/pull/5380)
-
-### Build with profiling support
-
-ToDo edit this to improve and make sense and be correct
-
-Profiling: to build with the profiler enabled, simply run `./bootstrap -DPROFILER_ENABLED=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo` and compile as normal.
-The latter flag is not strictly needed, but building with a `CMAKE_BUILD_TYPE` removes some uncertainty about which optimizations and features are enabled.
-
-To-do: extract wisdome from this conversation, [Pull Request #4764](https://github.com/pioneerspacesim/pioneer/pull/4764) and document here
-
-```xml
-<fluffyfreak> Gliese852, if you're on Windows then I use
-	https://github.com/VerySleepy/verysleepy a lot of the time 
-<Gliese852> fluffyfreak: thanks, I meant the built-in profiler, it seems that
-	if you do nothing, it creates a report on the launch of the program, and
-	the launch of a new game
-<fluffyfreak> If you're running the profile build then you can press Ctrl+p
-	to take a profile at any time
-<fluffyfreak> hmm, been a while since I used it. There's two modes
-<fluffyfreak> Ctrl+shift+p = is capture one frame, otherwise Ctrl+p toggles
-	capturing whenever the framerate is "slow"
-```
-
-### Using profiler
-
-to do
-
-### clang format check
+## clang-format
 
 ``    Yes, for your use you'd likely want to invoke `FORMAT_BASE=master ./autoformat` or `FORMAT_BASE=HEAD~1 ./autoformat` ``  
 ``    - there's little difference between the `autoformat` script and the `scripts/clang-format.sh` script other than the  ``  
