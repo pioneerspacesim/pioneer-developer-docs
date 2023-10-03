@@ -406,7 +406,9 @@ If it's a developer you will often want to pull code from you can add him/her to
 add a new one, named `<remote>`.
 
 `git remote add <remote> <url>`
+
 `git remote update`  
+
 `git checkout -b <branch-name> --track <remote>/<remote-branch-name>`
 
 ## Keeping things tidy
