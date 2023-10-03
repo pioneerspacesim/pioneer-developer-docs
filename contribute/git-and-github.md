@@ -86,6 +86,12 @@ or for more details
 
 `git remote show origin`
 
+### Configure actions
+
+You might notice that when you push code to your master branch in github, it will trigger the github actions/job, and start building Lua API documentation, as these settings were mirrored when you forked pioneer. You will likely get an error from GitHub Pages complaining you do not have "Pages enabled".
+
+You probably want to disable triggering these actions. In your github repository, go to Settings -> Actions -> General, and turn off action runners.
+
 ## Basic operations
 
 At this point you might want to consider searching for tutorials. There are many good ones on git out there. If you're familiar with svn look [here](http://git.or.cz/course/svn.html), and [this](http://marklodato.github.io/visual-git-guide/index-en.html) is a nice visual representation of different commands, which might be helpful. Basic git tutorials on youtube: [part 0](https://www.youtube.com/watch?v=vaNGbk6HN9Y), [part 1](https://www.youtube.com/watch?v=DQUcmNO4diQ). Below follows a few commands you will be using a lot, and be familiar with, but first make sure to delve into some tutorials. Git is a vast subject.
