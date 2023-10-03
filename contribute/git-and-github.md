@@ -395,6 +395,10 @@ Now pull the code in from the developer's branch named `<dev-branch>`
 
 `git pull https://github.com/<developer-user-name>/pioneer.git <dev-branch>`
 
+If there is a conflict, to accept all their changes:
+
+`git pull -s recursive -X theirs https://github.com/<developer-user-name>/pioneer.git <dev-branch>`
+
 If it's a developer you will often want to pull code from you can add him/her to your remote, just like you did with your own github `origin` and Pioneer's `upstream`.
 
 `git remote -v`
