@@ -27,13 +27,12 @@ To record video from gameplay (e.g. to document unexpected behavior):
 
 ### Debug from in-game
 
-Ctrl+I = debug window
-
-Ctrl+F10 open planet viewer, to view selected nav target
-
-Ctrl+F11 reload shaders while running game
-
-Ctrl+Del reload pigui element, allows for live coding. Limited support: Only reloads the active view and then only if the active view has manually enabled it (add \`debugReload = function() package.reimport() end\` to the view's definition next to the draw and refresh functions)
+- Ctrl+I toggles debug window open / close
+- Ctrl+LMB on "New Game" unlocks all starting state variables to be manually set
+- Ctrl held in Load Game menu toggles Recover vs Load of save file
+- Ctrl+F10 open planet viewer, to view selected nav target
+- Ctrl+F11 reload shaders while running game
+- Ctrl+Del reload pigui element, allows for live coding. Limited support: Only reloads the active view and then only if the active view has manually enabled it (add \`debugReload = function() package.reimport() end\` to the view's definition next to the draw and refresh functions)
 
 ### Debug savegame files
 
