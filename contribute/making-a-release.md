@@ -29,6 +29,11 @@ Things that need to be done for release
 
 - Start to draft a new [release](https://github.com/pioneerspacesim/pioneer/releases) a few days in advance. Go through entire [Changelog](https://github.com/pioneerspacesim/pioneer/blob/master/Changelog.txt) from last release, categorize new features into major and minor, and include bug fixes that are likely to have been noticeable for the player. Focus is on things relevant to the player, e.g. do not include internal code refactor changes.
 
+- Last merge before release:
+  - bump `s_saveVersion` (if needed),
+  - make sure Changelog.txt is updated, and
+  - add the release text to NEWS.md file.
+
 - To publish, simply create a tag (either in the draft release, or push manually), of form `YYYYMMDD`. Github will start a new github action, and build windows and GNU/Linux binaries, and attach to the release notes. Note: once build is done, ensure the build artifacts have correct names: `pioneer-<YYYYMMDD>-<win.exe|linux.tar.gz>`.
 
 ::: details Click for code for manual push of tag
