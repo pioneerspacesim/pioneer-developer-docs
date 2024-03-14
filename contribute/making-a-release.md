@@ -33,6 +33,7 @@ Things that need to be done for release
   - bump `s_saveVersion` (if needed),
   - make sure Changelog.txt is updated, and
   - add the release text to NEWS.md file.
+  - Update version: `set(PROJECT_VERSION` in top of [CMakeLists.txt](https://github.com/pioneerspacesim/pioneer/blob/master/CMakeLists.txt).
 
 - To publish, simply create a tag (either in the draft release, or push manually), of form `YYYYMMDD`. Github will start a new github action, and build windows and GNU/Linux binaries, and attach to the release notes. Note: once build is done, ensure the build artifacts have correct names: `pioneer-<YYYYMMDD>-<win.exe|linux.tar.gz>`.
 
@@ -74,6 +75,7 @@ Things that need to be done for release
 :::
 
 - Itch tracs its own downloads
+- Flathub [shows](https://flathub.org/apps/net.pioneerspacesim.Pioneer) cumulative downloads
 - (Sourceforge has public download stats)
 
 ## Misc
