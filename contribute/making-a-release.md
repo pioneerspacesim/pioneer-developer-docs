@@ -47,7 +47,7 @@ Things that need to be done for release
 ```
 :::
 
-- Re-build our home page, e.g. by "re-run job" in the latest actions in the [github repo](https://github.com/pioneerspacesim/pioneer-hugo)
+- Need to trigger re-build our home page manaully, by "Actions" tab -> "Deploy Hugo Site to pages" -> "Run workflow" drop down menu: [github repo](https://github.com/pioneerspacesim/pioneer-hugo/actions/workflows/hugo-pages.yml)
 
 - [Flatpack](https://github.com/flathub/net.pioneerspacesim.Pioneer/)
   - Update [recipe](https://github.com/flathub/net.pioneerspacesim.Pioneer/blob/master/net.pioneerspacesim.Pioneer.json) like [so](https://github.com/flathub/net.pioneerspacesim.Pioneer/pull/4)
