@@ -354,17 +354,12 @@ You can access some in-game model debug functionality via the debug menu accesse
 
 ### Modelviewer
 
-Additionally Pioneer provides a model viewer with even more functionality like shield display, and an error log. This can be accessed by launching Pioneer with the `pioneer -mv` option.
+Additionally Pioneer provides a model viewer with even more functionality like shield display, and an error log. This can be accessed by launching `editor.exe` from where Pioneer is installed.
 
 ![modelviewer](assets/modelviewer.png)
 
-One can even include the model name, and it will load it on start:
 
-```
-pioneer.exe -mv coronatrix
-```
-
-It can be helpful to place a shortcut with these parameters to the model directory while working on it, so one can quickly check it out.
+It can be helpful to place a shortcut to the model directory while working on it, so one can quickly check it out.
 
 ## Internal workings
 
