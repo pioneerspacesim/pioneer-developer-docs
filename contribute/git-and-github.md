@@ -553,4 +553,5 @@ Writing good [commit messages](https://github.com/RomuloOliveira/commit-messages
 
 -   [git-flight-rules](https://github.com/k88hudson/git-flight-rules) Lots of examples, and links to further resources
 -   [Oh shit, git!](https://ohshitgit.com/) Fixing common mistakes in git
+-   [git cheat sheet (PDF)](https://wizardzines.com/git-cheat-sheet.pdf)
 -   [git rebase in depth](https://git-rebase.io/) Good guide on how to clean up/fix your git commit history
