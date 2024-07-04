@@ -18,7 +18,7 @@ Sturnclaw already started working/thinking on an Entity Component System, which 
 - Damaged equipment could create unexpected behaviours, like induced rotation by faulty RCS for example, or higher signal output, thus ship brighter on radar.
 - The ability to have subcrafts (shuttles, tugs) for certain tasks. Crew could operate these via a management/tactical-like interface
 - More involved crew, and a management interface could be nice too.
-- **The ability to externally dock** - would provide lots of gameplay abilities, and more depth
+- **[The ability to externally dock](./ship_operations_ext_docking.md)** - would provide lots of gameplay abilities, and more depth
 - Ability to store replacement equipment, and field-install it even
 - A general "consumables" resource used by life support (albeit slowly, if one has a nice regenerating/closed loop life support system). A spontaneous SAR detour could put a stress on this, when you need to haul six more people than intended.
 - There could be a general "spare parts" resource used for field maintenance and repair. And there could be the ability to cannibalize less important equipment when in a pinch. There could also be spare parts specific to a certain equipment, which would be consumed more slowly for the maintenance of that equipment, but could not be used, or much less efficiently for other equipment.
