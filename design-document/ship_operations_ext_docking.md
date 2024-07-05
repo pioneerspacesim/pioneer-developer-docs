@@ -295,7 +295,7 @@ The player can select which collar to deploy similarily to raising or lowering t
 
 ![10_collars_05](assets/ext_docking/10_collars_05.png)
 
-On the above example the ship has three collars: one S3 on each side, and one S2 on the front, and the top one is deployed.  They are ordered by how the tags are numbered, from left to right. The number indicates collar size, and the little symbols in the center and the circles around it indicate direction:
+On the above example the ship has three collars: one S3 on each side, and one S2 on the front, and the top one is deployed.  They are ordered by how the tags are numbered, from left to right. The number indicates collar size, and the little symbols in the center and the circles around it indicate direction and occupancy:
 
 ![10_collars_06](assets/ext_docking/10_collars_06.png)
 
