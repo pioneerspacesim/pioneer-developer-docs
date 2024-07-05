@@ -218,7 +218,7 @@ Collars would likey be placed parallel to one of the axes of the ship. Them plac
 
 An important requirement for them is to be placed on the outer boundaries of the ships, so all ships could dock with any without collision. 
 
-Some ships, like the Malabar have some collars that have limited clearances. This would mostly pose problems for the autopilot and ships spawned already docked. The player should use their head and eyes to decide if they can fit I think.
+Some ships, like the Malabar have some collars that have limited clearances. This would mostly pose problems for the autopilot and ships spawned already docked. The player should use their head and eyes to decide if they can fit in my opinion.
 
 ![10_collars_08](assets/ext_docking/10_collars_08.png)
 
@@ -226,7 +226,7 @@ Some ships, like the Malabar have some collars that have limited clearances. Thi
 
 The problem is, there are orientations in which two Malabars could easily dock, and smaller ships wouldn't have a problem either. Not sure how to solve this, but maybe multiple bounding boxes for different allowed orientations? And then the autopilot would pick one it can fit in? (Ideally, the boxes would be put into a separate mesh or in the collision for easier editing). 
 
-There could be an additional white and blacklist in the ship.jsons for know a possible or impossible combinations. Like the rear collar of the Malabar So a ship could list which ships are allowed in which collars and in which orientations.
+There could be an additional white and blacklist in the ship.jsons for known possible or impossible combinations. Like the rear collar of the Malabar So a ship could list which ships are allowed in which collars and in which orientations.
 
 A black/whiletlist could look like this:
 
