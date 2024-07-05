@@ -296,7 +296,7 @@ This feature will be more customizable someday, but for  now the following name 
 
 ### Labels
 
-Dynamic 3D labels are meant for naming ships and space stations. Put an **empty** object in the model and give it a name beginning with `label`.  The text is set by the game at runtime if supported.
+Dynamic 3D labels are meant for naming ships and space stations. Put an **empty** object in the model and give it a name beginning with `label.`  The text is set by the game at runtime if supported. Important: not "tag_label" but **"label."**!
 
 Node scale can be used as usual but the text is not constrained to the node bounds or anything like that, so some trial will be  required. 
 
