@@ -13,5 +13,9 @@
     "uncategorized": {
         "text": "Uncategorized",
         "collapsible": true
+    },
+    "contributing": {
+        "text": "3D asset creation",
+        "collapsible": true
     }
 }
