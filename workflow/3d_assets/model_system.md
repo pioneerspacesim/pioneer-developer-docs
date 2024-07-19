@@ -320,8 +320,10 @@ Named `tag_landing`, it defines the placement of the ship while landed. Basicall
 
 These can define the point where the weapon projectiles are shot from.
 
-- `tag_gunmount_0` front gun
-- `tag_gunmount_1` rear gun
+- `tag_gunmount_0_multi_0`  and `tag_gunmount_0_multi_1`  - front gun
+- `tag_gunmount_1_multi_0`  and `tag_gunmount_1_multi_1` - rear gun
+
+The `_multi_#` part sets up the two nozzles of double barreled guns, for single barrel guns, `_multi_0` is used. `tag_gunmount_#` can be used too, then you don't set up the second barrel at all, and they will shoot at a slight offset.
 
 
 
