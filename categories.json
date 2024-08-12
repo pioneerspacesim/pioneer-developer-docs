@@ -14,6 +14,10 @@
         "text": "Uncategorized",
         "collapsible": true
     },
+    "content_creation": {
+        "text": "Content Creation",
+        "collapsible": true
+    },
     "3d_asset_creation": {
         "text": "3D asset creation",
         "collapsible": true

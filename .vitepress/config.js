@@ -30,7 +30,8 @@ export default {
     },
 
     markdown: {
-        config: mdConfig
+        config: mdConfig,
+        theme: 'material-theme-palenight'
     },
 
     vite: {

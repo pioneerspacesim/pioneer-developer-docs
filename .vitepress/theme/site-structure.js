@@ -16,7 +16,7 @@ const spaceship = (a, b) => {
 }
 
 export function scrapeSidebars(dir) {
-    const files = fg.sync([ dir + '/*.md' ])
+    const files = fg.sync([ dir + '/**/*.md' ])
 
     var sidebarList = []
 
