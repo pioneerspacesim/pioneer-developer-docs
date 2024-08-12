@@ -1,5 +1,5 @@
 ---
-title: 3D asset creation
+title: 3D asset workflow
 category: content_creation
 ---
 

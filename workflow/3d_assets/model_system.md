@@ -1,6 +1,7 @@
 ---
-title: Model system Overview
+title: Model system overview
 category: content_creation
+order: 1
 ---
 
 # Model system overview
@@ -88,9 +89,8 @@ lod 50
 mesh fuselage_low.dae
 mesh engines_low.dae
 
-#Special meshes:
+#Collision mesh:
 collision ship_collision.dae
-mesh ship_shield.dae
 
 #Animations are defined like this:
 #anim name, first frame, last frame
@@ -192,15 +192,35 @@ You may specify any number of detail levels in any order, they will be sorted ac
 
 ## Shield and collision meshes
 
-These are special meshes defining collision, and how the shield is shown (and hit). These can be in their separate mesh files, or included in the high LoD.
+These are special meshes defining collision, and how the shield is shown (and hit).
 
-#### Shield
+### Shield
 
-If you name an object `shipname\*_shield`, it will be used as  the shield mesh for the ship. It can be in the top LoD .dae (.obj, etc), or in a separate file, but then you have to define that .dae for the  top LoD too in the .model file. If not present, then the game will generate a spherical shield around  the ship.
+Shield meshes must be stored in a separate mesh file. The shield model selected for a ship is controlled by the `shield_model` key in the ship definition JSON file.
+
+All objects in a shield mesh file will be considered shield geometry. Shields should be in their own mesh files and be loaded by an associated model file:
+
+```sh
+# In my_ship_shield.model
+mesh ship_shield.dae
+```
+
+That model file needs to be specified in the ship's `ship.json` file via the `shield_model` key for it to be loaded. If the `shield_model` key is not present, it will fall back to the name of the ship's model with a `_shield` suffix added.
+
+```json
+{
+  "model": "my_ship",
+  "shield_model": "my_ship_shield"
+}
+```
+
+If set up correctly, you'll be able to see a shield on the ship model when toggling the Show Shields option in the Model Viewer.
 
 ![shield](assets/shield.png)
 
-#### Collision
+### Collision
+
+Collision meshes can be in separate mesh files, or included in the high LoD mesh file.
 
 By default, the **collision mesh** of a model is the bounding box of all the meshes.
 
@@ -373,6 +393,7 @@ The internal scene graph consists of several of these nodes:
 | --------------- | ------------------------------------------------------------ |
 | Group           | A group is a Node that can have several children.            |
 | MatrixTransform | A Group that applies a transformation to its child nodes when rendering. |
+| Tag             | A named point on the model for use by external code, like cameras or weapons. Tags can be animated if needed. |
 | StaticGeometry  | Contains one or more StaticMeshes.                           |
 | LOD             | Detail level control node, picks one of the child nodes based on the approximate size of the model on screen. |
 | ModelNode       | Can be used to attach another Model as a submodel. Use case: dynamic equipment on ships. |
