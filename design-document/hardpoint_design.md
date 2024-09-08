@@ -5,6 +5,8 @@ category: design-docs
 
 # Hardpoint-based Equipment System
 
+**Updated:** 2024-09
+
 A major aspect of the gameplay vision for Pioneer is to move away from the mass-limited equipment system, replacing it with a volume-based capacity metric that provides more flexibility when deciding how to outfit your ship. Another aspect is to provide the player with visible feedback about the state of their ship, including rendering visible weapons in the correct locations on the hull.
 
 When considering the physical volume and placement of equipment, it becomes apparent that some equipment is purely internal, with the assumption that it can be mounted anywhere; other equipment (like ­hyperdrives and shield generators) generally must be mounted in specific areas[^1] and have a 'slot limit' on how many can be installed; and some equipment (weapons, sensors, and scoops) need to be mounted on the exterior of the craft to function.
@@ -90,11 +92,35 @@ An example of this type of equipment is a hyperdrive or shield generator - the f
 
 Computer modules are a special type of equipment item - they consume no equipment volume and are direct "upgrades" of the ship's capability. In return, they're mounted into a limited number of slots in the ship's computer, and consume a proportionate amount of system bandwidth. Ship computers are specified on a per-hull basis and provide a number of Small, Medium, and Large module slots. The ship's computer cannot be easily replaced without significant modification to the ship.
 
+## Fuel Management
+
+As part of the move to a hardpoint-based system, the ability to freely convert fuel in a ship's fuel tank to a unit of cargo in the cargo hold and vice versa is planned to be retired. The functionality has never been internally consistent from an in-universe perspective, as it arbitrarily creates or destroys cryogenic storage containers to hold the fuel.
+
+The functionality will be replaced in several ways:
+
+1. Ships can be equipped with "fuel reservoir" equipment. This installs in free (non-slot) equipment space, and provides additional reserve fuel storage at an appropriate mass cost. Fuel can be freely pumped up and down between the reservoir and the main fuel tank with a similar pumping interface as is currently present.
+
+	Search and Rescue missions will require the player to transfer fuel from a reservoir tank via a docking collar or external umbilical to the stranded ship.
+
+2. Ships can be equipped with a "Cargo Fuel Pump" equipment item. This provides the ability to transfer fuel to and from fuel containers in the cargo bay. Fuel containers can be purchased full or empty, have a credit and mass cost, and remain in the cargo bay once drained.
+
+	A cargo fuel pump has a higher credit and mass cost than an equivalent capacity fuel reservoir, but allows the pilot to make a tradeoff between cargo and fuel on the fly without needing to reconfigure the ship's equipment setup.
+
+3. Fuel scoops will fill the main and reservoir tanks directly, and will never create any commodity items in the hold. With a cargo fuel pump installed, the fuel scoop will fill existing fuel containers in the cargo hold as well.
+
+4. Hyperdrives are intended to be converted to run on a separate internal fuel tank rather than consuming fuel from the cargo hold. Hydrogen-based hyperdrives can consume jump fuel from a reservoir tank (enabling fractional jump costs), and/or have an internal small-volume jump fuel tank which is refilled from the main fuel system.
+
+5. Pre-created ship variants can trade-off fuel vs. equipment vs. cargo space in the same hull. For example, a "Sinonatrix XL" variant might sacrifice equipment space and cargo hold for an extended fuel tank.
+
 ## Hull Variants
 
-Each ship hull type has a single setup of hardpoints and internal slots defined by the internal and external structure of the ship. This represents what can be fit within the limits of the internal structure and configuration of the ship. However, some enterprising pilots may want to make more significant changes to the layout of their ship to tailor it for a specific purpose.
+Ship hulls are associated with a set of metadata called a "hull configuration". That configuration defines hardpoints, internal slots, equipment space, cargo space, fuel tank size, and more.
 
-To support this gameplay, some ships may be able to be reconfigured to support a completely different style of gameplay. For example, a ship's internal missile bay might be replaced with an external weapon hardpoint, the drives reconfigured to make room for a larger hyperdrive, or a bulk freighter's cargo hold replaced with fighter launch bays. Hull variants represent this level of configuration. With the right materials, you can pay a mechanic to retrofit your ship to a different hull variant.
+Variants of the same hull can exist as additional "hull configurations" of the same base hull. Players can either buy the specific variant of the ship they want, or can potentially buy a different variant of the same hull and pay a mechanic to retrofit the ship into the specific configuration they want.
+
+For example, a hull configuration might remove a ship's internal missile bay but add an additional external weapon hardpoint, reconfigure the in-system engines to make room for a larger hyperdrive, or replace a bulk freighter's cargo hold with fighter launch bays.
+
+Access to ship variant "blueprints" can be a gameplay element, with certain hull configurations (for example, a search-and-rescue configuration of a cargo ship) being rare and less likely to be available for sale at the ship market.
 
 Hull variants are expected to be predefined on a per-ship basis, rather than freely generated at runtime. The internal equipment system already provides a large amount of customization potential, and hull variants are intended to augment that system to handle customizations that would require major changes to the ship's external mesh.
 
