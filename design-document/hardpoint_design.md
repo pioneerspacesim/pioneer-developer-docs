@@ -92,26 +92,6 @@ An example of this type of equipment is a hyperdrive or shield generator - the f
 
 Computer modules are a special type of equipment item - they consume no equipment volume and are direct "upgrades" of the ship's capability. In return, they're mounted into a limited number of slots in the ship's computer, and consume a proportionate amount of system bandwidth. Ship computers are specified on a per-hull basis and provide a number of Small, Medium, and Large module slots. The ship's computer cannot be easily replaced without significant modification to the ship.
 
-## Fuel Management
-
-As part of the move to a hardpoint-based system, the ability to freely convert fuel in a ship's fuel tank to a unit of cargo in the cargo hold and vice versa is planned to be retired. The functionality has never been internally consistent from an in-universe perspective, as it arbitrarily creates or destroys cryogenic storage containers to hold the fuel.
-
-The functionality will be replaced in several ways:
-
-1. Ships can be equipped with "fuel reservoir" equipment. This installs in free (non-slot) equipment space, and provides additional reserve fuel storage at an appropriate mass cost. Fuel can be freely pumped up and down between the reservoir and the main fuel tank with a similar pumping interface as is currently present.
-
-	Search and Rescue missions will require the player to transfer fuel from a reservoir tank via a docking collar or external umbilical to the stranded ship.
-
-2. Ships can be equipped with a "Cargo Fuel Pump" equipment item. This provides the ability to transfer fuel to and from fuel containers in the cargo bay. Fuel containers can be purchased full or empty, have a credit and mass cost, and remain in the cargo bay once drained.
-
-	A cargo fuel pump has a higher credit and mass cost than an equivalent capacity fuel reservoir, but allows the pilot to make a tradeoff between cargo and fuel on the fly without needing to reconfigure the ship's equipment setup.
-
-3. Fuel scoops will fill the main and reservoir tanks directly, and will never create any commodity items in the hold. With a cargo fuel pump installed, the fuel scoop will fill existing fuel containers in the cargo hold as well.
-
-4. Hyperdrives are intended to be converted to run on a separate internal fuel tank rather than consuming fuel from the cargo hold. Hydrogen-based hyperdrives can consume jump fuel from a reservoir tank (enabling fractional jump costs), and/or have an internal small-volume jump fuel tank which is refilled from the main fuel system.
-
-5. Pre-created ship variants can trade-off fuel vs. equipment vs. cargo space in the same hull. For example, a "Sinonatrix XL" variant might sacrifice equipment space and cargo hold for an extended fuel tank.
-
 ## Hull Variants
 
 Ship hulls are associated with a set of metadata called a "hull configuration". That configuration defines hardpoints, internal slots, equipment space, cargo space, fuel tank size, and more.
