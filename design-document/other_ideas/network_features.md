@@ -1,5 +1,6 @@
 ---
 title: Network Features
+category: design-docs/other-ideas
 ---
 # Network features
 Whilst actual multiplayer won\'t ever be in the game, it should be possible to include some network code to enrich the game.

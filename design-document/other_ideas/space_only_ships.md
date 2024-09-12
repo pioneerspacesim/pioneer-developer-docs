@@ -1,5 +1,6 @@
 ---
 title: Space only ships
+category: design-docs/other-ideas
 ---
 # Space only ships
 A flyable ship that cannot make landfall upon a planet. Something like the Lynx Bulk Carrier, although it doesn't necessarily have to be that large. For whatever gameplay balance reason used, a ship might not be able to land on a surface under gravity, or might not be able to use atmospheric shielding. These could be given advantages to offset the disadvantage.

@@ -1,5 +1,6 @@
 ---
 title: Flight control
+category: design-docs/other-ideas
 ---
 # Flight Control
 

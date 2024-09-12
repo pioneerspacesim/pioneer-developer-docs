@@ -1,5 +1,6 @@
 ---
 title: Faction ideas
+category: design-docs/other-ideas
 ---
 # Faction ideas
 ## Faction Heraldry

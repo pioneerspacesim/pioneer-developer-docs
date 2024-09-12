@@ -1,5 +1,6 @@
 ---
 title: Crew ideas
+category: design-docs/other-ideas
 ---
 # Crew ideas
 

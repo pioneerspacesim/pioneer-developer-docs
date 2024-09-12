@@ -1,5 +1,6 @@
 ---
 title: Commodity prices
+category: design-docs/other-ideas
 ---
 # Commodity Prices
 

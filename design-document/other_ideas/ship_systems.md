@@ -1,5 +1,6 @@
 ---
 title: Ship Systems
+category: design-docs/other-ideas
 ---
 # Ship Systems
 ## Design goals

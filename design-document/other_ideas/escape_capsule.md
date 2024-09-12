@@ -1,5 +1,6 @@
 ---
 title: Escape Capsule
+category: design-docs/other-ideas
 ---
 # Escape capsule
 Escape capsules should deploy automatically, or on demand by the player. Depending on the possibility of multiple ship ownership, the abandoned ship might still be retained as player property, and if there is an autopilot or pilot (see [crew](./crew.md)) on board the player could ask it to land.
