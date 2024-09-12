@@ -31,7 +31,8 @@ export default {
 
     markdown: {
         config: mdConfig,
-        theme: 'material-theme-palenight'
+        theme: 'material-theme-palenight',
+        math: true
     },
 
     vite: {

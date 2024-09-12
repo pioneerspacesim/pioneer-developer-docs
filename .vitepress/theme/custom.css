@@ -3,11 +3,10 @@
  */
 
 :root:not(.dark) {
-    --vp-c-brand: #3b469c;
-    --vp-c-brand-light: #545fbf;
-    --vp-c-brand-lighter: #7782e5;
-    --vp-c-brand-dark: #2f3673;
-    --vp-c-brand-darker: #1c214d;
+    --vp-c-brand-1: #4747B8;
+    --vp-c-brand-2: #1c214d;
+    --vp-c-brand-3: #3646A1;
+    --vp-c-brand-4: #6477D8;
 
     /* tweak sidebar colors slightly darker */
     --vp-c-bg-alt: #efefef;
@@ -15,17 +14,16 @@
 }
 
 :root.dark {
-    --vp-c-brand: #8792f9;
-    --vp-c-brand-light: #a1a9ff;
-    --vp-c-brand-lighter: #b3baff;
-    --vp-c-brand-dark: #545fbf;
-    --vp-c-brand-darker: #3b469c;
+    --vp-c-brand-1: #8792f9;
+    --vp-c-brand-2: #a1a9ff;
+    --vp-c-brand-3: #5863c7;
+    --vp-c-brand-4: #3b469c;
+}
 
-    /* invert hover behavior of dark theme branded buttons */
-    --vp-button-brand-bg: var(--vp-c-brand-dark);
-    --vp-button-brand-border: var(--vp-c-brand-dark);
-    --vp-button-brand-hover-bg: var(--vp-c-brand-darker);
-    --vp-button-brand-hover-border: var(--vp-c-brand-darker);
+/* invert hover behavior of branded buttons */
+:root {
+    --vp-button-brand-bg: var(--vp-c-brand-3);
+    --vp-button-brand-hover-bg: var(--vp-c-brand-4);
 }
 
 /* Site title animates towards brand color rather than fades out */
@@ -33,16 +31,6 @@
     transition: color 0.25s;
 }
 :root .title:hover {
-    color: var(--vp-c-brand);
+    color: var(--vp-c-brand-1);
     opacity: 1.0;
-}
-
-/* light theme links get darker when hovered */
-:root:not(.dark) .vp-doc a:hover {
-    color: var(--vp-c-brand-darker);
-}
-
-/* dark theme links get lighter when hovered */
-:root.dark .vp-doc a:hover {
-    color: var(--vp-c-brand-lighter);
 }
