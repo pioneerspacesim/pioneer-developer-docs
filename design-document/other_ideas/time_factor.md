@@ -51,3 +51,59 @@ On one hand this would likely make trading and similar UI-heavy gameplay legs mo
 But on the other hand  some players might really dislike this feature, like if they are more interested in actually flying their ship. **So it would be important to provide some settings for this feature, like a slider that would act as a multiplier for these times.** Which could be set to zero to allow for things to happen instantly. Which could then be tied into other aspects of difficulty or rewards, to make it worthwhile. 
 
 The UI of this would likely live on the station screen and ship info screen as a queue with progress bars, and ways to assign crews to jobs or to interact with the other possibilities. 
+
+# Possible implementation roadmap
+
+## Minimal viable implementation
+
+### 1 - Things take time
+
+- Introduce time factor to actions:
+
+  - Loading and unloading of cargo
+    - Cargo mass and fragility could govern job time
+
+  - Installing and uninstalling equipment
+    - Equipment size class and complexity (price) could govern job time
+
+  - Servicing and maintenance
+    - Ship and equipment size, complexity could govern job time
+
+  - Loading and unloading of fuel
+
+- **UI**: queue on Station Screen that displays the job, and time left.
+
+  - Button to set "alarm" that would stop time accel when job is done
+
+  - Last job always stops time accel
+
+  - Done jobs play notification and then deleted from queue (Maybe after a couple of minutes, so the player can see what's - finished?)
+
+- **Setting** for "difficulty"
+  - 0 - nothing takes time, game works the same as now. Queue is never shown
+  - 1 - things take the predefined time we set up after balancing the gameplay
+  - some steps between 0 and 1 to finetune (0.25, 0.5, 0.75 for example)
+
+### 2 - Crew assignment to manage time
+
+- Players can assign crew to queue jobs
+- Number of assigned crew governs speed of job
+  - 0: station crew does it slowly
+  - Number of crew decreases job time by 0.8x for each additional crew (diminishing returns)
+  - Crew skills could govern how effective they are in a given type of job
+    - Intelligence: 0.9x for repairs
+    - Strength: 0.9x for handling cargo
+  - Player skills could also affect job times in a similar way (but then they should level up by time or something similar)
+- Jobs could have crew member limits (based on cargo bay size, slot size, etc)
+- **UI:** Provide crew slots for each job card in the queue. 
+  - Either a numerical slider
+  - Or specific crew selector, if skill governs their effectiveness
+
+### 3 - Equipment to manage time
+
+- Some equipment could provide speed upgrades for job times (eg 0.75x)
+  - Cargo crane decreases cargo load times 
+  - Maintenance workshop decreases servicing and maintenance (could go into an S2 utility slot, or to a cabin slot for example
+    - Tangent: This equipment would provide field repair and maintenance in-flight too, with similar time factors)
+    - With UI in he Infoview screen
+  - Upgraded fuel pumps decrease fuel load times. (could go into utility slot)
