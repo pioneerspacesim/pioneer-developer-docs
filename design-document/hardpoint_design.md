@@ -92,6 +92,18 @@ An example of this type of equipment is a hyperdrive or shield generator - the f
 
 Computer modules are a special type of equipment item - they consume no equipment volume and are direct "upgrades" of the ship's capability. In return, they're mounted into a limited number of slots in the ship's computer, and consume a proportionate amount of system bandwidth. Ship computers are specified on a per-hull basis and provide a number of Small, Medium, and Large module slots. The ship's computer cannot be easily replaced without significant modification to the ship.
 
+## Cabin Slots
+
+Cabins are a special-case equipment item, consuming no "equipment space" volume but being assigned pre-planned slots by the ship designer. A cabin slot can hold several different types of "plugs": extra crew accommodations, passenger bays, workshop areas for in-flight repair of ship components, or even an "empty bay" item which has very low mass cost but no benefits of its own. Perhaps enterprising captains could even purchase "decoy" cabins which hide a smuggler's hold behind a seemingly-innocuous blank wall?
+
+The actual dimensions of a cabin slot may vary from ship to ship, but the volume allocated to a cabin slot should be approximately the same across all slots of the same size:
+
+- **S1**: 12.5m³
+- **S2**: 40.0m³
+- **S3**: 128m³
+- **S4**: 410m³
+- **S5**: 1320m³
+
 ## Hull Variants
 
 Ship hulls are associated with a set of metadata called a "hull configuration". That configuration defines hardpoints, internal slots, equipment space, cargo space, fuel tank size, and more.
