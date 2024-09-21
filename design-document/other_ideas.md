@@ -14,3 +14,4 @@ These are additional ideas gathered during the years (from the old wiki, they mi
 - [Network Features](./other_ideas/network_features.md)
 - [Ship Systems and power](./other_ideas/ship_systems.md)
 - [Space only Ships](./other_ideas/space_only_ships.md)
+- [Time factor for actions](./other_ideas/time_factor.md)
