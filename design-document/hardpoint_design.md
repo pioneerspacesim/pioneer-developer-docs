@@ -35,8 +35,13 @@ Weapons here refer to fixed or gimballed mounts for gun-style weapons (e.g. lase
 
 Weapons are best used for combat within 1-5km, depending on projectile velocity and target aspect ratio.[^4]
 
-- Weapon hardpoint sizes increment by 2.25x volume (1.3103 uniform scale)
-- Weapon damage / power-draw scales by 1.6x per size increment
+- Weapon hardpoint sizes increment by ~2.75x volume and ~1.4 uniform scale
+  - S1: 1.00 scale
+  - S2: 1.40 scale
+  - S3: 1.96 scale
+  - S4: 2.75 scale
+  - S5: 3.85 scale
+- The overall effectiveness of a weapon scales by 1.6x per size increment. This can include power draw, sustained damage per second, etc.
 - Weapons are slightly more power-efficient as the size class goes up (e.g. 1x S3 weapon draws ~2.4x the power of an S1 instead of 2.56x)
 - Different weapon types in the same class can have different DPS, but need to be balanced by heat build-up and power draw
 - Potentially sensor emissions? Firing "noisy" weapons make it easier for missiles to track...
@@ -57,24 +62,31 @@ A hardpoint can specify that it is able to mount a missile, an ordnance rack, an
   - Smaller missiles are better for engaging agile/unarmored targets
 - Missiles do not scale as large as weapon hardpoints do; instead "volume of fire" is utilized
 - Missile size classes:
-	- S0: 1.1m, 90mm diameter; unguided rockets / podded A2G missiles
+	- S0: 1.1m, 90mm diameter; unguided rockets / A2G guided rockets
 	- S1: 1.9m, 180mm diameter; short-range guided missiles
 	- S2: 2.6m, 250mm diameter; medium-range guided missiles
 	- S3: 3.6m, 340mm diameter; long-range smart missiles
 	- S4: 5.0m, 470mm diameter; "naval" missiles / torpedoes
 	- S5: 6.8m, 640mm diameter; large anti-capital missiles
 
-- Ordnance racks use power-of-two scaling (2/4/8) and start with 2 missiles of size N-1. They have a specific size template that should be used if a hardpoint is tagged as capable of holding a rack.
+- Missiles are mounted in "missile" hardpoints, typically externally. A hull configuration can directly provide missile hardpoints, or it can allow flexibility by providing pylon or missile bay hardpoints.
 
-- Ordnance pods are specialty weapons and hardpoints must be designed to work with them. They have a specific tag and size template. They are mostly used to hold odd numbers of rockets or missiles for ground-attack work.
+- Pylon hardpoints are external hardpoints that mount external ordnance launchers. A pylon can mount a launcher for a single missile of its size class, or a missile rack containing several smaller missiles. Pylons have two templates, a larger general-purpose template which allows the use of single-missile launchers and large ordnance pods, and a smaller template only compatible with standardized missile racks.
 
-- A hardpoint can be set up to hold a single missile directly in addition to being able to hold an ordnance rack / pod. This requires the hardpoint area conform to the weapon template sizing for an equivalently-sized weapon as well as the ordnance rack template.
+- Pylon hardpoints scale according to the same metric as weapon hardpoints (this is intentionally slightly greater than scaling of individual missiles):
+  - S1: 1.00 scale
+  - S2: 1.40 scale
+  - S3: 1.96 scale
+  - S4: 2.75 scale
+  - S5: 3.85 scale
 
-- A hardpoint can be designated as an "internal rack mount", allowing only the explicitly specified racks to be mounted on it. An internal rack mount has special-case code handling for rendering and other calculations (e.g. atmospheric drag.)
+- Missile racks use power-of-two scaling (2/4/8) and start with 2 missiles of size N-1. They fit into the "pylon.rack" subset of the pylon template.
 
-- A rack or pod that holds multiple missiles will present a simplified interface to the user, consolidating multiple missiles in the rack into a single entry for the shared type of the missile.
+- Rocket pods are special weapons which must mount on a pylon hardpoint. They are mostly used to hold an odd number of S0 dumb-fire rockets for ground-attack work. S0 rockets are not tracked as missiles directly through the equipment system, but are considered "ammunition" for the launcher pod "weapon".
 
-- A missile hardpoint that is tagged as rack compatible may have any ordnance rack mounted onto it of the same size. E.g. a S3 hardpoint may mount a S3 missile, a 2xS2 rack, or a 4xS1 rack.
+- Pylon hardpoints using the larger general-purpose template may hold a single missile in a missile rack of its size class in addition to being able to hold an ordnance rack / pod. This requires the hardpoint area conform to the weapon template sizing for an equivalently-sized weapon as well as the ordnance rack template.
+
+- Missile bay hardpoints are separate equipment types. They are intended for manufacturer- and hull-specific missile launchers mounted in dedicated equipment volume inside of the hull. Missile bays typically mount several missiles of the same size class and generally hold more missiles than a standardized missile rack of equivalent size, at the cost of being restricted to a single hull or manufacturer.
 
 ## Internal Equipment
 
