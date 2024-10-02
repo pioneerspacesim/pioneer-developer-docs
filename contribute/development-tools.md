@@ -27,7 +27,7 @@ To record video from gameplay (e.g. to document unexpected behavior):
 
 ### Debug from in-game
 
-- Ctrl+I toggles debug window open / close
+- Ctrl+i toggles debug window open / close
 - Ctrl+LMB on "New Game" unlocks all starting state variables to be manually set
 - Ctrl held in Load Game menu toggles Recover vs Load of save file
 - Ctrl+F10 open planet viewer, to view selected nav target
@@ -42,7 +42,7 @@ and look in your savefile folder (e.g. `~/.pioneer/savefiles` on linux) at `<mys
 
 ### Debug Lua Callstack
 
-A lua callstack can also help - there's a function in lua/core/Sandbox.cpp that can be called in the debugger to get a callstack
+A lua callstack can also help - there's a function in lua/core/Sandbox.cpp that can be called in the debugger to get a callstack. You can insert `void pi_lua_stacktrace(lua_State *l)` that you can execute inside a C++ side breakpoint/assert to print the Lua callstack, and a very verbose set of context information is written to the output.txt log when Lua encounters an error.
 
 ### Misc.
 
@@ -62,6 +62,11 @@ The quit confirmation box can be supressed by putting ConfirmQuit=0 in the pione
 There is support for sending Lua code from IDE into running pioneer session via TCP:
 - [Pull Request #3768](https://github.com/pioneerspacesim/pioneer/pull/3768)
 - [Pull Request #4799](https://github.com/pioneerspacesim/pioneer/pull/4799)
+
+### LSP - Language Server Protocol
+Wheather you use VSCode, Vim, Emacs, or other IDE, it most likely supports use of LSP language server protocol. We recommend:
+- For Lua, use [LuaLS](https://github.com/LuaLS/lua-language-server)
+- For C++, use [clangd](https://clangd.llvm.org/installation.html) (there's also [ccls](https://github.com/MaskRay/ccls))
 
 ### Easy start (Linux)
 
