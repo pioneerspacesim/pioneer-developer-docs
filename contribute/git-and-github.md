@@ -555,3 +555,4 @@ Writing good [commit messages](https://github.com/RomuloOliveira/commit-messages
 -   [Oh shit, git!](https://ohshitgit.com/) Fixing common mistakes in git
 -   [git cheat sheet (PDF)](https://wizardzines.com/git-cheat-sheet.pdf)
 -   [git rebase in depth](https://git-rebase.io/) Good guide on how to clean up/fix your git commit history
+-   [Popular git config options](https://jvns.ca/blog/2024/02/16/popular-git-config-options/)
