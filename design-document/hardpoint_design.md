@@ -111,10 +111,10 @@ Cabins are a special-case equipment item, consuming no "equipment space" volume 
 The actual dimensions of a cabin slot may vary from ship to ship, but the volume allocated to a cabin slot should be approximately the same across all slots of the same size:
 
 - **S1**: 12.5m³ - 1 person
-- **S2**: 40.0m³ - 3 people
-- **S3**: 128m³ - 8 people
-- **S4**: 410m³ - 22 people
-- **S5**: 1320m³ - 60 people
+- **S2**: 37.5m³-40.0m³ - 3 people
+- **S3**: 120m³-128m³ - 8 people
+- **S4**: 375m³-410m³ - 22 people
+- **S5**: 1125m³-1320m³ - 60 people
 
 ## Hull Variants
 
