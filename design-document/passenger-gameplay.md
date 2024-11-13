@@ -23,6 +23,8 @@ Luxury cabins would have less berths for the same size, bulk cabins more.
 
 Selling an occupied cabin should not be allowed; the player needs to complete the mission first, or find alternative means to encourage a (group of) passenger(s) from vacating a cabin.
 
+This ties in to #5509 - upgrading from one ship to a new one should allow for a way to transfer passengers (in fact, all cargo) from the old ship to the new ship, assuming the new ship is outfitted with at least the same amount of cargo/cabin space as the old ship.
+
 ## **Passenger Groups**
 
 Missions can ask for passengers to be transported. Currently there is no concept of a "group" of passengers apart from needing sufficient passenger cabin space in your ship for the number of people in the group. Passengers are simply embarked into whichever cabins have free berths.
@@ -36,6 +38,7 @@ Each passenger should belong to a "group" (even if they are by themselves). The 
 ## **Passenger Management**
 
 ### **Moving passengers between Cabins**
+
 There should be a passenger management interface (TODO: mockups; @Szlrd?) which can be used to move passengers between cabins (possibly at a cost - nobody likes to be moved unless its an upgrade).
 
 Should be able to move passengers or passenger groups from one cabin to another, possibly in order to free up space in a cabin for a new group to be able to board.
