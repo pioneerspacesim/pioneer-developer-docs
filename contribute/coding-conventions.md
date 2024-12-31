@@ -21,7 +21,7 @@ Licensed under the terms of the GPL v3. See licenses/GPL-3.txt
 Assets (including Lua-based data files like custom systems) are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). For text-based assets that support comments or copyright information, be sure to include these two lines:
 
 ```
-Copyright © 2008-2024 Pioneer Developers. See AUTHORS.txt for details
+Copyright © 2008-2025 Pioneer Developers. See AUTHORS.txt for details
 Licensed under the terms of CC-BY-SA 3.0. See licenses/CC-BY-SA-3.0.txt
 ```
 
