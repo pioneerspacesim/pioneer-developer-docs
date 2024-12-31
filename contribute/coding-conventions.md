@@ -14,7 +14,7 @@ Engine and Lua code is licensed under [GPL v3](http://www.gnu.org/licenses/gpl.h
 When submitting a file to the Pioneer repository, be sure to include these two lines at the top of each file (suitably commented):
 
 ```
-Copyright © 2008-2024 Pioneer Developers. See AUTHORS.txt for details
+Copyright © 2008-2025 Pioneer Developers. See AUTHORS.txt for details
 Licensed under the terms of the GPL v3. See licenses/GPL-3.txt
 ```
 
