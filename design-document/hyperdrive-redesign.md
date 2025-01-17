@@ -30,7 +30,7 @@ Because hyperspace does not map to any Euclidean dimensions nor have any kind of
 The efficiency factor $E$ of the hyperdrive is responsible for determining the range of the drive according to the mass of the ship. The efficiency factor was chosen to give good values for maximum range over hyperdrive class 1-5 with a fuel tank size of 1-32t.
 
 $$
-E = \frac { S_f } { (M_{hull} + M_{fuel})^{\frac 2 3} } \times \frac { 1 + H_{cls} } { H_{cls} }
+E = \frac { S_f } { (M_{hull} + M_{fuel})^{\frac 3 5} } \times \frac { 1 + H_{cls} } { H_{cls} }
 $$
 
 The maximum range of a hyperdrive is controlled by how much fuel can be used in one jump, modified by the efficiency factor $E$. Re-arranging the first equation to find distance yields the equation for the maximum range in light-years with a given amount of fuel:
@@ -45,16 +45,16 @@ $$
 f = \frac {d^{0.9}} E
 $$
 
-The equation for jump duration $t$ per light-year travelled $d$ used by the current hyperdrive implementation reduces to:
+The equation for jump duration $t$ per light-year travelled $d$ used by the **current** hyperdrive implementation reduces to:
 
 $$
 t_{old} = 0.36 \frac { d^2 M^{1.5} } {625 H^3_{cls}}
 $$
 
-Under the new model, time taken in a jump remains exponentially scaled with the distance, but scales less aggressively overall:
+Under the **new** model, time taken in a jump remains exponentially scaled with the distance, but scales less aggressively overall:
 
 $$
-t = 0.36 \frac { d^{1.6} M^{1.2} } { 425 H_{cls} ^{3} S_t }
+t = 0.36 \frac { d^{1.6} M^{1.2} } { 425 H_{cls} ^{2} S_t }
 $$
 
 Of note is that the choice of exponents here results in an almost-invariant duration for a maximum-range jump as ship lading increases - particularly the mass exponent is tuned for the inverse exponent used to compute $E$.
