@@ -31,11 +31,10 @@ Things that need to be done for release
 
 - Last merge before release:
   - bump `s_saveVersion` (if needed),
-  - update `set(PIONEER_VERSION "YYYYMMDD")` in CMakeLists.txt
+  - update `set(PIONEER_VERSION "YYYYMMDD")` to the current release version near top of [CMakeLists.txt](https://github.com/pioneerspacesim/pioneer/blob/master/CMakeLists.txt).
   - see notes in [SAVEBUMP.txt](https://github.com/pioneerspacesim/pioneer/blob/master/SAVEBUMP.txt) on changes pending the bump
   - make sure Changelog.txt is updated, and
   - add the release text to NEWS.md file.
-  - Update version: `set(PROJECT_VERSION` in top of [CMakeLists.txt](https://github.com/pioneerspacesim/pioneer/blob/master/CMakeLists.txt).
 
 - To publish, simply create a tag (either in the draft release, or push manually), of form `YYYYMMDD`. Github will start a new github action, and build windows and GNU/Linux binaries, and attach to the release notes. Note: once build is done, ensure the build artifacts have correct names: `pioneer-<YYYYMMDD>-<win.exe|linux.tar.gz>`.
 
