@@ -31,6 +31,7 @@ Things that need to be done for release
 
 - Last merge before release:
   - bump `s_saveVersion` (if needed),
+  - update `set(PIONEER_VERSION "YYYYMMDD")` in CMakeLists.txt
   - see notes in [SAVEBUMP.txt](https://github.com/pioneerspacesim/pioneer/blob/master/SAVEBUMP.txt) on changes pending the bump
   - make sure Changelog.txt is updated, and
   - add the release text to NEWS.md file.
