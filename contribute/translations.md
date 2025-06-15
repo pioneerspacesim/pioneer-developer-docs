@@ -9,7 +9,7 @@ All text in Pioneer is translatable, and the game ships with several translation
 
 ## For translators
 
-All our translations are managed through [Transifex](https://transifex.com), a free web-based translation service. To start writing translations, sign up there, using [this link](https://www.transifex.com/signup/open-source/?join_project=pioneer), and then take a look at the [Pioneer project](https://www.transifex.com/projects/p/pioneer/). You can either use the web-interface, or download the full file, and edit off line, and then re-upload.
+All our translations are managed through [Transifex](https://transifex.com), a free web-based translation service. To start writing translations, sign up there, using [this link](https://app.transifex.com/signup/open-source/?join_org=pioneer&join_project=pioneer), and then take a look at the [Pioneer project](https://explore.transifex.com/pioneer/pioneer/). You can either use the web-interface, or download the full file, and edit off line, and then re-upload.
 
 Changes to translations are automatically pulled into the master git repo, from transifex, twice per day, and from there to the builds when they're next run.
 
