@@ -27,14 +27,20 @@ Things that need to be done for release
 
 - Ensure the Changelog, AUTHORS, README and other docs are up to date.
 
-- Start to draft a new [release](https://github.com/pioneerspacesim/pioneer/releases) a few days in advance. Go through entire [Changelog](https://github.com/pioneerspacesim/pioneer/blob/master/Changelog.txt) from last release, categorize new features into major and minor, and include bug fixes that are likely to have been noticeable for the player. Focus is on things relevant to the player, e.g. do not include internal code refactor changes.
+- Start to draft a new [release](https://github.com/pioneerspacesim/pioneer/releases) a few days in advance. Go through entire [Changelog](https://github.com/pioneerspacesim/pioneer/blob/master/Changelog.txt) from last release, categorize all changes into into _Major_ and _Minor_ features, and include all bug fixes under its own _Bugfixes / Tweaks_. [Good release notes](https://refactoringenglish.com/chapters/release-announcements/) does more than just describe what the development team has done (changelog), instead focus how it benefits the player:
+- Focus is on things relevant and exciting to the player, e.g. do not include internal code refactor changes
+- Why is the user experience better now compared to previous version
+- What new gameplay is available?
+- What has become easier, faster, or better looking?
+- Bugs: avoid focusing on the flaw that has been fixed or the absence of the bug, but instead focus on improved user experience
+- Include screenshots, preferably highlighting the part of i interest with a red box or arrow
 
 - Last merge before release:
   - bump `s_saveVersion` (if needed),
   - update `set(PIONEER_VERSION "YYYYMMDD")` to the current release version near top of [CMakeLists.txt](https://github.com/pioneerspacesim/pioneer/blob/master/CMakeLists.txt).
   - see notes in [SAVEBUMP.txt](https://github.com/pioneerspacesim/pioneer/blob/master/SAVEBUMP.txt) on changes pending the bump
   - make sure Changelog.txt is updated, and
-  - add the release text to NEWS.md file.
+  - add the release text to [NEWS.md](https://github.com/pioneerspacesim/pioneer/blob/master/NEWS.md) file.
 
 - To publish, simply create a tag (either in the draft release, or push manually), of form `YYYYMMDD`. Github will start a new github action, and build windows and GNU/Linux binaries, and attach to the release notes. Note: once build is done, ensure the build artifacts have correct names: `pioneer-<YYYYMMDD>-<win.exe|linux.tar.gz>`.
 
