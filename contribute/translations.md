@@ -42,7 +42,14 @@ Then you can get at the string by its token:
 print(l.SOME_TRANSLATED_STRING)
 ```
 
-While it is possible to load multiple translation resources to share strings, it's highly recommended that you don't do that. Stick to your own strings so that you don't have to track changes in other modules. Duplicates across resources are fine. Note that code that uses multiple resources won't be accepted into the main Pioneer repository unless you've checked it with a core developer first and it has a good reason.
+While it is possible to load translation resources from other modules to share strings, it's highly recommended that you don't do that. Stick to your own strings so that you don't have to track changes in other modules. Duplicates across resources are fine. Note that code that uses multiple resources won't be accepted into the main Pioneer repository unless you've checked it with a core developer first and it has a good reason.
+
+The primary exception to this rule is using existing core modules, i.e. `core` and `ui-core`;  modules are encouraged to use strings from these modules where it makes sense. By convention, these modules have special variable names when loaded into a Lua module:
+
+```lua
+local lc = Lang.GetResource("core")
+local lui = Lang.GetResource("ui-core")
+```
 
 Translations are [`chrome.i18n` JSON](https://developer.chrome.com/extensions/i18n.html) files. The format is fairly simple - a JSON object with tokens as keys and values of an object with two keys, `message` and `description`. `message` is the text that will appear in the game, while `description` provides instructions for the translator that will be displayed in Transifex. [Here](https://www.json.org/img/string.png) is a useful chart showing how characters are interpreted.
 
