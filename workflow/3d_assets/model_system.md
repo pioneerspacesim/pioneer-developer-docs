@@ -62,40 +62,47 @@ Models must be placed under **data/models,** preferably in their respective cate
 To define a model, create a ```name_here.model``` text file next to your exported mesh. You can use the example above as a template:
 
 ```sh
-#Comments can be written like this
-#Define all used materials first
-Material some-material
-diffuse 0.8 0.7 0.7
-specular 0.3 0.3 0.3
-shininess 40
-tex_diff diffuse_texture.png
-tex_spec specular_texture.png
-tex_norm normal_map_texture.png
-tex_glow glow_texture.png
-use_patterns
+version 2 # Required to start the file
 
-#Meshes to be imported into this model, should be in the current folder
-#Mixing different formats should be OK
-#Level of Detail levels are set up like this:
-lod 300
-mesh fuselage_hi.dae
-mesh engines_hi.dae
+# Comments can be written like this
+# Define all used materials first
+material "some-material" {
+	shader "multi"
+	diffuse 0.8 0.7 0.7
+	specular 0.3 0.3 0.3
+	shininess 40
+	texture diffuse  "diffuse_texture.png"
+	texture specular "specular_texture.png"
+	texture normal   "normal_map_texture.png"
+	texture glow     "glow_texture.png"
+	use_patterns
+}
 
-lod 150
-mesh fuselage_mid.dae
-mesh engines_mid.dae
+# Meshes to be imported into this model, should be in the current folder
+# Mixing different formats should be OK
+# Level of Detail levels are set up like this:
+lod 300 {
+	mesh "fuselage_hi.dae"
+	mesh "engines_hi.dae"
+}
 
-lod 50
-mesh fuselage_low.dae
-mesh engines_low.dae
+lod 150 {
+	mesh "fuselage_mid.dae"
+	mesh "engines_mid.dae"
+}
 
-#Collision mesh:
-collision ship_collision.dae
+lod 50 {
+	mesh "fuselage_low.dae"
+	mesh "engines_low.dae"
+}
+
+# Collision mesh:
+collision "ship_collision.dae"
 
 #Animations are defined like this:
 #anim name, first frame, last frame
-anim gear_down 1 100
-anim idle 101 201
+anim "gear_down" 1 100
+anim "idle" 101 201
 ```
 
 ## Materials
@@ -103,43 +110,76 @@ anim idle 101 201
 Only material names are imported from the 3D models, so you need to set up the material properties and used textures in the .model file like this:
 
 ```sh
-material material_name
-diffuse 0.8 0.7 0.7
-specular 0.3 0.3 0.3
-shininess 40
-tex_diff diffuse_texture.png
-tex_spec specular_texture.png
-tex_norm normal_map_texture.png
-tex_glow glow_texture.png
+material "material_name" {
+	shader "multi"
+	diffuse 0.8 0.7 0.7
+	specular 0.3 0.3 0.3
+	shininess 40
+	texture diffuse  "diffuse_texture.png"
+	texture specular "specular_texture.png"
+	texture normal   "normal_map_texture.png"
+	texture glow     "glow_texture.png"
+}
 ```
 
 If the texture is in the same directory as the .model file, then only the filename is needed. You can also use textures from other directories via relative paths:
 
 ```sh
-tex_diff diffuse_texture.png
-tex_diff ../othership/other_texture.png
+texture diffuse "diffuse_texture.png"
+# OR
+texture diffuse "../othership/other_texture.png"
+# OR, relative to the root of the data/ directory
+texture diffuse "/models/ships/othership/other_texture.png"
 ```
 
 `../` means one level above in the directory structure, and you can string them together: `../../`
 
 ### Material properties
 
-| Keyword      | Description                                                  |
-| ------------ | ------------------------------------------------------------ |
+| Keyword      | Description                                                                                                                                                                                                                                        |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | material     | Name. Mandatory! If exporting from Blender, you can use the name of  the Material as is. It's case-sensitive.(If in doubt, note that both .obj and .dae files are human readable, and you can find the assigned names in them with a text editor.) |
-| diffuse      | Diffuse colour RGB. Default white.                           |
-| specular     | Colour of specular highlights, RGB. Default white. Set to black to disable highlights. |
-| emissive     | Self-illumination colour, RGB. Default black.                |
-| shininess    | Sharpness/size of specular highlights, 0 - 128. Default 100. (Inverse of Roughness value of Blender) |
-| opacity      | 0-100, controls transparency of the material. A node with a material opacity less than 100 is treated as transparent, otherwise opaque. |
-| tex_diff     | Diffuse texture, file name If you don't specify this, a white dummy texture is generated. |
-| tex_ambi     | Ambient occlusion texture, file name (in the same folder). Used for  faking ambient occlusion, by multiplying the diffuse with this. So the  darker the AO texture, the darker it will make the diffuse. |
-| tex_glow     | Self-illumination texture, overrides emissive colour parameter. Default none. |
-| tex_spec     | Specular highlight colour/intensity texture. Default none.  Multiplied by specular colour parameter, so set it to white to leave  control entirely to the texture. |
-| tex_norm     | Normal map. Default none. You can create surface detail with it, which interacts with lighting. |
-| use_patterns | This material will use the pattern/colour system. Read more below. |
-| unlit        | No lighting, diffuse value can still be used to tint the result |
-| alpha_test   | Pixels with alpha value < 0.5 are discarded, this is good for  fences and such. It produces sharp edges but the geometry does not need  to be sorted. |
+| shader       | Shader used to render this material. Optional, defaults to `"multi"` if not specified. Shaders are defined in `.shaderdef` files in `data/shaders/`.                                                                                               |
+| diffuse      | Diffuse colour RGB. Default white.                                                                                                                                                                                                                 |
+| specular     | Colour of specular highlights, RGB. Default white. Set to black to disable highlights.                                                                                                                                                             |
+| emissive     | Self-illumination colour, RGB. Default black.                                                                                                                                                                                                      |
+| shininess    | Sharpness/size of specular highlights, 0 - 128. Default 100. (Inverse of Roughness value of Blender)                                                                                                                                               |
+| opacity      | 0-100, controls transparency of the material. A node with a material opacity less than 100 is treated as transparent, otherwise opaque.                                                                                                            |
+| use_patterns | This material will use the pattern/colour system. Read more below.                                                                                                                                                                                 |
+| unlit        | No lighting, diffuse value can still be used to tint the result                                                                                                                                                                                    |
+| alpha_test   | Pixels with alpha value < 0.5 are discarded, this is good for  fences and such. It produces sharp edges but the geometry does not need  to be sorted.                                                                                              |
+| render_state | Specifies the render state used to draw this material. Used to control how transparent materials (e.g. cockpit canopies) are drawn.                                                                                                                |
+#### Textures
+Textures are assigned to a material with a `texture <binding> "<path>"` directive. Textures can be bound to any texture binding point specified by the shader. The default `multi` shader supports five binding points:
+
+| Binding  | Description                                                                                                                                                                                              |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| diffuse  | Diffuse texture, file name If you don't specify this, a white dummy texture is generated.                                                                                                                |
+| ambient  | Ambient occlusion texture, file name (in the same folder). Used for  faking ambient occlusion, by multiplying the diffuse with this. So the  darker the AO texture, the darker it will make the diffuse. |
+| glow     | Self-illumination texture, overrides emissive colour parameter. Default none.                                                                                                                            |
+| specular | Specular highlight colour/intensity texture. Default none.  Multiplied by specular colour parameter, so set it to white to leave  control entirely to the texture.                                       |
+| normal   | Normal map. Default none. You can create surface detail with it, which interacts with lighting.                                                                                                          |
+#### Render State
+You can specify certain aspects of the internal render state used to draw a material. These properties are mostly for advanced users and are documented here briefly. The following `render_state` block is sufficient to set up a transparent material:
+```sh
+material "mymaterial" {
+	# ...
+	opacity 40
+	
+	render_state {
+		blend alpha
+		depth_write off
+	}
+}
+```
+
+| State        | Description                                                                                                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| blend        | One of solid, additive, alpha, alpha_one, alpha_premult. Controls the blending function used to render the material. Alpha blending should be used with transparent materials. |
+| cull         | One of front, back, none. Controls the cull mode used to determine which side of a triangle is considered visible. None renders the material as "two-sided".                   |
+| depth_test   | Either on/off. Default on. Controls whether the material uses depth-tested rendering or always renders over top other objects in the scene.                                    |
+| depth_write  | Either on/off. Default on. Controls whether the material writes the fragment depth to the depth buffer (should be off for transparent materials).                              |
+| scissor_test | Either on/off. Default off. Scissor is only used for UI rendering at this time.                                                                                                |
 
 ### Textures
 
@@ -172,18 +212,21 @@ The system has several limitations: it is not meant to do fine details,  transit
 
 ## Detail levels (LoD)
 
-Meshes can be grouped into detail levels using the `lod pixelsize` directive:
+Meshes are assigned to detail levels using the `lod pixelsize` directive:
 
 ```sh
-lod 100
-mesh hull_low.dae
+lod 100 {
+	mesh "hull_low.dae"
+}
 
-lod 200
-mesh hull_med.dae
+lod 200 {
+	mesh "hull_med.dae"
+}
 
-lod 1000
-mesh hull_hi.dae
-mesh landing_gear.dae
+lod 1000 {
+	mesh "hull_hi.dae"
+	mesh "landing_gear.dae"
+}
 ```
 
 A detail level will be picked if the approximate radius of the model on screen is less than `pixelsize` (for the highest level it does not matter as long as it's larger than the others). Use the modelviewer to find optimal sizes.
@@ -201,8 +244,11 @@ Shield meshes must be stored in a separate mesh file. The shield model selected 
 All objects in a shield mesh file will be considered shield geometry. Shields should be in their own mesh files and be loaded by an associated model file:
 
 ```sh
-# In my_ship_shield.model
-mesh ship_shield.dae
+version 2 # my_ship_shield.model
+
+lod 100 {
+	mesh "ship_shield.dae"
+}
 ```
 
 That model file needs to be specified in the ship's `ship.json` file via the `shield_model` key for it to be loaded. If the `shield_model` key is not present, it will fall back to the name of the ship's model with a `_shield` suffix added.
@@ -237,7 +283,7 @@ Note, these names are reserved for station collision trigger surfaces:
 You can also import a separate mesh using the `collision` directive in the model definition:
 
 ```sh
-collision collision.obj
+collision "collision.obj"
 ```
 
 The collision mesh is separate from all detail levels, so it should be only defined once.![collision](assets/collision.png)
@@ -264,7 +310,7 @@ These special nodes are **only imported from the most detailed LOD**, there is n
 
 These define the position and orientation of the six internal view cameras. If one is missing, tag_camera will be used with its orientation adjusted for the appropriate view direction. If there's none, ship center is used. 
 
-**Camera tag scale shouls be 1 on all three axes to avoid glitches!**
+**Camera tag scale should be 1 on all three axes to avoid glitches!**
 
 Their orientation is: Z - out, X - left, Y - up:
 
@@ -334,7 +380,7 @@ Named `tag_landing`, it defines the placement of the ship while landed. Basicall
 
 ![tag_landing](assets/tag_landing.png)
 
-**Important note:** this tag is not used for landing detection. You need to add a bit of collision mesh extending to this hight to allow the ship to land.
+**Important note:** this tag is not used for landing detection. You need to add a bit of collision mesh extending to this height to allow the ship to land.
 
 ### Guns
 
@@ -352,7 +398,7 @@ The `_multi_#` part sets up the two nozzles of double barreled guns, for single 
 Set up in the model file with their starting and end frames:
 
 ```
-anim gear_down 1 100
+anim "gear_down" 1 100
 ```
 
 An animation consists of Channels. Each channel controls one node  (always a MatrixTransform) and has a list of position and rotation Keys. Each key has a time and value. Keys are always linearly interpolated.
@@ -363,8 +409,8 @@ Because of the linear interpolation, it is advised to bake animations *(TODO: ba
 
 There are two animations supported currently:
 
-- `idle` - a looping animation. Good for rotating sections, radar dishes, windmills for example
-- `gear_down` - lowering of the langing gear. Frame 0 is fully raised, the endframe is when it is fully lowered. Played backwards for raising the gear.
+- `"idle"` - a looping animation. Good for rotating sections, radar dishes, windmills for example
+- `"gear_down"` - lowering of the langing gear. Frame 0 is fully raised, the endframe is when it is fully lowered. Played backwards for raising the gear.
 
 At first the animations had proper play/pause/loop functionality  but right now it is not so. Animation progress (and fun things like serialization) needs to be controlled directly by whatever feature uses  the animation (see: landing gear).
 
