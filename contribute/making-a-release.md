@@ -23,7 +23,7 @@ Due to tradition, we try to not let it be more than one year between each offici
 
 Things that need to be done for release
 
-- Ensure that transifex bot is synchronizing (ecraven), if not, run manually (impaktor, sturnclaw)
+- Ensure that transifex bot is synchronizing (impaktor), if not, run manually (impaktor, sturnclaw)
 
 - Ensure the Changelog, AUTHORS, README and other docs are up to date.
 
@@ -40,7 +40,7 @@ Things that need to be done for release
   - update `set(PIONEER_VERSION "YYYYMMDD")` to the current release version near top of [CMakeLists.txt](https://github.com/pioneerspacesim/pioneer/blob/master/CMakeLists.txt).
   - see notes in [SAVEBUMP.txt](https://github.com/pioneerspacesim/pioneer/blob/master/SAVEBUMP.txt) on changes pending the bump
   - make sure Changelog.txt is updated, and
-  - add the release text to [NEWS.md](https://github.com/pioneerspacesim/pioneer/blob/master/NEWS.md) file.
+  - add the release text to [NEWS.md](https://github.com/pioneerspacesim/pioneer/blob/master/NEWS.md) file and commit.
 
 - To publish, simply create a tag (either in the draft release, or push manually), of form `YYYYMMDD`. Github will start a new github action, and build windows and GNU/Linux binaries, and attach to the release notes. Note: once build is done, ensure the build artifacts have correct names: `pioneer-<YYYYMMDD>-<win.exe|linux.tar.gz>`.
 
