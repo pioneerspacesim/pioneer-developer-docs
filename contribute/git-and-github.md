@@ -556,3 +556,5 @@ Writing good [commit messages](https://github.com/RomuloOliveira/commit-messages
 -   [git cheat sheet (PDF)](https://wizardzines.com/git-cheat-sheet.pdf)
 -   [git rebase in depth](https://git-rebase.io/) Good guide on how to clean up/fix your git commit history
 -   [Popular git config options](https://jvns.ca/blog/2024/02/16/popular-git-config-options/)
+-   [Confusing git terminology](https://jvns.ca/blog/2023/11/01/confusing-git-terminology)
+-   [I gave commit rights to someone I didn't know, guessed what happened next!](https://tech.davis-hansson.com/p/clickbait) - Inspiring
