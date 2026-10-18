@@ -36,6 +36,7 @@ Things that need to be done for release
   - Include screenshots, preferably highlighting the part of i interest with a red box or arrow
 
 - Last merge before release:
+  - Trigger pull request from Notion (szlrd / Nozmajner)
   - bump `s_saveVersion` (if needed),
   - update `set(PIONEER_VERSION "YYYYMMDD")` to the current release version near top of [CMakeLists.txt](https://github.com/pioneerspacesim/pioneer/blob/master/CMakeLists.txt).
   - see notes in [SAVEBUMP.txt](https://github.com/pioneerspacesim/pioneer/blob/master/SAVEBUMP.txt) on changes pending the bump
